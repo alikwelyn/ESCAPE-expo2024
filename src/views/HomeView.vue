@@ -1,10 +1,11 @@
 <script setup>
 import Navbar from '../components/organisms/Navbar.vue'
+import Hero from '../components/organisms/Hero.vue'
 </script>
 
 <template>
   <main>
     <Navbar />
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <Hero />
   </main>
 </template>
