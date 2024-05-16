@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background:
+    url('../../public/bg.png'),
+    url('../../../public/circle-green.png') no-repeat #12111f;
+}

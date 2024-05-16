@@ -1,9 +1,10 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import Navbar from '../components/organisms/Navbar.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <Navbar />
+    <h1 class="text-3xl font-bold underline">Hello world!</h1>
   </main>
 </template>
