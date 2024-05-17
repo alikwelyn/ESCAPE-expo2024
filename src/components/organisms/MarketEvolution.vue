@@ -279,7 +279,7 @@ export default {
 </script>
 
 <template>
-  <div class="w-full flex justify-center items-center mt-20">
+  <div class="w-full flex justify-center items-center mt-14">
     <TitleSection title1="A EVOLUÇÃO DO" title2="MERCADO">
       <template #icon>
         <MarketEvolutionIcon />
