@@ -1,6 +1,8 @@
 <template>
   <div class="mt-12 mx-auto">
-    <span class="inline-block absolute top-13 left-16 z-0 hidden w-32 mt-20 text-red-900 sm:block">
+    <span
+      class="inline-block absolute z-0 sm:hidden md:hidden lg:hidden xl:block xl:-top-7 xl:left-10 2xl:block 2xl:top-5 2xl:left-10 3xl:block 3xl:top-130 3xl:left-16 w-32 mt-20 text-red-900"
+    >
       <div class="flex-grow-0 flex-shrink-0 w-[330px] h-[116px] rounded-[20px] bg-[#252141]">
         <div class="w-[329px] h-[116px] absolute left-px top-0 overflow-hidden">
           <svg
@@ -52,7 +54,7 @@
       </div>
     </span>
     <span
-      class="inline-block absolute top-[340px] left-[150px] z-0 hidden w-32 mt-20 text-red-900 sm:block"
+      class="inline-block absolute sm:hidden md:hidden lg:hidden xl:block xl:top-[340px] xl:left-[70px] 2xl:block 2xl:top-[340px] 2xl:left-[100px] 3xl:block 3xl:top-[340px] 3xl:left-[150px] z-0 w-32 mt-20 text-red-900"
     >
       <div
         class="flex flex-col justify-center items-center flex-grow-0 flex-shrink-0 w-[330px] overflow-hidden py-4 rounded-[20px] bg-[#252141]"
@@ -124,14 +126,16 @@
       </div>
     </span>
     <div class="w-full mx-auto text-center">
-      <h1 class="w-full text-center text-white text-[62px] font-bold leading-[72px]">
-        A primeira e única<br />
-        <span class="relative">
+      <h1
+        class="w-full text-center text-white font-bold sm:text-[40px] sm:leading-[40px] sm:px-[10px] md:text-[44px] lg:text-[62px] xl:text-[62px] 2xl:text-[62px] 3xl:text-[62px] leading-[72px]"
+      >
+        <span class="sm:text-[28px]">A primeira e única</span> <br />
+        <span class="inline-block relative">
           <svg
             width="343"
             height="12"
             viewBox="0 0 343 12"
-            class="absolute top-2/3 left-0 h-[0.58em] w-full fill-blue-300/70"
+            class="absolute top-2/3 left-0 h-[0.7em] w-full"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -143,9 +147,9 @@
             />
           </svg>
 
-          <span class="relative">rede social</span></span
+          <span class="relative sm:text-[40px]">rede social</span></span
         >
-        <div class="inline-block px-3">
+        <div class="inline-block px-3 sm:pt-[25px] sm:pb-[10px]">
           <span
             class="rounded-full border-[3px] border-white inline-block bg-contain bg-no-repeat align-middle mx-[0] -my-[0.5em] w-[55px] h-[55px] bg-[url(../../../public/narguilerosa.jpg)] translate-x-0 -translate-y-[5px]"
           ></span>
@@ -159,12 +163,12 @@
             class="-ml-4 rounded-full border-[3px] border-white inline-block bg-contain bg-no-repeat align-middle mx-[0] -my-[0.5em] w-[55px] h-[55px] bg-[url(../../../public/macario.jpg)] translate-x-0 -translate-y-[5px]"
           ></span>
         </div>
-        <span class="relative">
+        <span class="inline-block relative">
           <svg
             width="343"
             height="12"
             viewBox="0 0 343 12"
-            class="absolute top-2/3 left-0 h-[0.58em] w-full fill-blue-300/70"
+            class="absolute top-2/3 left-0 h-[0.7em] w-full"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -176,19 +180,19 @@
             />
           </svg>
 
-          <span class="relative">narguileira</span></span
+          <span class="relative sm:text-[40px]">narguileira</span></span
         ><br />
         <span
-          class="mr-5 rounded-full inline-block align-middle mx-[0] w-[209px] h-[45px] bg-[url(../../../public/rosh.png)]"
+          class="sm:hidden mr-5 rounded-full inline-block align-middle mx-[0] w-[209px] h-[45px] bg-[url(../../../public/rosh.png)]"
         ></span
-        >do mundo
+        ><span class="sm:text-[28px]">do mundo</span>
         <span
-          class="ml-3 rounded-full inline-block align-middle mx-[0] w-[159px] h-[45px] bg-[url(../../../public/emojis.png)]"
+          class="sm:hidden ml-3 rounded-full inline-block align-middle mx-[0] w-[159px] h-[45px] bg-[url(../../../public/emojis.png)]"
         ></span>
       </h1>
     </div>
     <span
-      class="inline-block absolute top-[80px] right-[270px] z-0 hidden w-32 mt-20 text-red-900 sm:block"
+      class="inline-block absolute sm:hidden md:hidden lg:hidden xl:block xl:-top-[20px] xl:right-[270px] 2xl:block 2xl:top-[0px] 2xl:right-[270px] 3xl:block 3xl:top-[80px] 3xl:right-[270px] z-0 hidden w-32 mt-20 text-red-900"
     >
       <div
         class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 w-[350px] overflow-hidden p-6 rounded-[20px] bg-[#252141]"
@@ -253,7 +257,7 @@
       </div>
     </span>
     <span
-      class="inline-block absolute top-[220px] right-[330px] z-0 hidden w-32 mt-20 text-red-900 sm:block"
+      class="inline-block absolute sm:hidden md:hidden lg:hidden xl:block xl:top-[320px] xl:right-[130px] 2xl:block 2xl:top-[320px] 2xl:right-[130px] 3xl:block 3xl:top-[220px] 3xl:right-[330px] z-0 hidden w-32 mt-20 text-red-900"
     >
       <div
         class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative gap-2 p-4 rounded-2xl bg-[#252141]"
@@ -273,7 +277,7 @@
     </span>
     <div class="w-full mx-auto text-center w-10/12">
       <div
-        class="mt-[20px] flex justify-center items-start flex-grow-0 flex-shrink-0 relative overflow-hidden gap-2.5"
+        class="sm:px-[10px] mt-[20px] flex justify-center items-start flex-grow-0 flex-shrink-0 relative overflow-hidden gap-2.5"
       >
         <button
           type="button"

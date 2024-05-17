@@ -16,14 +16,5 @@ import Footer from '../components/organisms/Footer.vue'
   <main>
     <Navbar />
     <Hero />
-    <MarketEvolution />
-    <ImpactOurMarket />
-    <EscapeOut />
-    <BecauseYouCan />
-    <AboutEsc />
-    <ExploreOurApp />
-    <FutureUpdates />
-    <Doubts />
-    <Footer />
   </main>
 </template>
