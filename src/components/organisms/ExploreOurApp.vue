@@ -2,7 +2,9 @@
 
 <template>
   <div class="w-full flex-col justify-center items-center mt-14 text-center">
-    <h2 class="mb-2 block text-[52px] font-semibold leading-snug text-white antialiased">
+    <h2
+      class="sm:text-[32px] sm:leading-tight sm:px-4 md:leading-tight md:px-8 lg:text-[36px] mb-2 block text-[52px] font-semibold leading-snug text-white antialiased"
+    >
       Explore cada canto do nosso aplicativo
     </h2>
     <p class="mb-2 block text-[18px] font-regular leading-snug text-white antialiased">

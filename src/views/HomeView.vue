@@ -21,5 +21,6 @@ import Footer from '../components/organisms/Footer.vue'
     <EscapeOut />
     <BecauseYouCan />
     <AboutEsc />
+    <ExploreOurApp />
   </main>
 </template>
