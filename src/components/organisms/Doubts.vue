@@ -4,19 +4,23 @@
   <div class="w-full flex-col justify-center items-center mt-14">
     <div class="flex flex-col justify-center items-center">
       <p
-        class="flex-grow-0 flex-shrink-0 text-[40px] font-bold bg-gradient-to-tr from-[#fff] to-[#71717A] inline-block text-transparent bg-clip-text"
+        class="sm:text-[30px] lg:text-[36px] text-[40px] font-bold text-left bg-gradient-to-tr from-[#fff] to-[#71717A] text-transparent bg-clip-text leading-tight text-center"
       >
         A ESC É GRATUITA
       </p>
       <p
-        class="flex-grow-0 flex-shrink-0 text-[65px] -mt-6 font-bold bg-gradient-to-tr from-[#fff] to-[#71717A] inline-block text-transparent bg-clip-text"
+        class="sm:text-[36px] lg:text-[42px] text-[65px] font-bold text-left bg-gradient-to-tr from-[#fff] to-[#71717A] text-transparent bg-clip-text leading-none text-center"
       >
         PORÉM AJUDAR O MERCADO CUSTA
       </p>
     </div>
   </div>
-  <div class="w-full flex-col justify-center items-center mt-5">
-    <div class="w-4/6 flex justify-center items-center gap-5 mx-auto">
+  <div
+    class="sm:px-4 md:px-8 lg:px-10 xl:px-12 2xl:px-14 w-full flex-col justify-center items-center mt-5"
+  >
+    <div
+      class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex justify-center items-center gap-5 mx-auto"
+    >
       <div
         class="w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
       >
@@ -65,7 +69,7 @@
               Fale da nossa rede social de narguile para seus clientes
             </h5>
             <p
-              class="block font-sans text-[18px] font-light leading-relaxed text-white antialiased"
+              class="block font-sans text-[16px] font-regular leading-relaxed text-white antialiased"
             >
               Promova um espaço onde os amantes de narguile podem se conectar, compartilhar
               experiências e descobrir novidades exclusivas.
@@ -121,7 +125,7 @@
               Nos deem ideias
             </h5>
             <p
-              class="block font-sans text-[18px] font-light leading-relaxed text-white antialiased"
+              class="block font-sans text-[16px] font-regular leading-relaxed text-white antialiased"
             >
               Envie sugestões e ideias para melhorarmos ainda mais. Juntos, podemos criar soluções
               incríveis.
@@ -130,7 +134,9 @@
         </div>
       </div>
     </div>
-    <div class="w-4/6 flex justify-center items-center gap-5 mx-auto mt-5">
+    <div
+      class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex justify-center items-center gap-5 mx-auto mt-5"
+    >
       <div
         class="w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
       >
@@ -199,7 +205,7 @@
               Entre no nosso grupo de lojistas
             </h5>
             <p
-              class="block font-sans text-[18px] font-light leading-relaxed text-white antialiased"
+              class="block font-sans text-[16px] font-regular leading-relaxed text-white antialiased"
             >
               Junte-se ao grupo de lojistas da ESC e obtenha informações exclusivas e fique por
               dentro do lançamento do nosso APP.
@@ -246,7 +252,7 @@
               Não perca as esperanças, nosso mercado ainda só está começando
             </h5>
             <p
-              class="block font-sans text-[18px] font-light leading-relaxed text-white antialiased"
+              class="block font-sans text-[16px] font-regular leading-relaxed text-white antialiased"
             >
               Estamos apenas no início de uma jornada emocionante. Acredite no potencial da nossa
               rede social e cresça junto com a comunidade do narguile!
