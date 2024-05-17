@@ -280,7 +280,9 @@ export default {
 
 <template>
   <div class="w-full flex justify-center items-center mt-14">
-    <div class="w-4/6 flex-col">
+    <div
+      class="sm:w-full sm:px-4 md:w-full md:px-8 lg:w-full lg:px-10 xl:w-full xl:px-12 2xl:w-full 2xl:px-14 w-4/6 flex-col"
+    >
       <TitleSection title1="A EVOLUÇÃO DO" title2="MERCADO">
         <template #icon>
           <MarketEvolutionIcon />
@@ -288,8 +290,8 @@ export default {
       </TitleSection>
     </div>
   </div>
-  <div class="w-full flex justify-center items-center">
-    <div class="w-4/6 flex gap-5">
+  <div class="sm:px-4 md:px-8 lg:px-10 xl:px-12 2xl:px-14 w-full flex justify-center items-center">
+    <div class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex gap-5">
       <div class="relative flex w-full rounded-xl bg-[#252141] bg-opacity-50">
         <div class="p-[24px]">
           <h5 class="mb-2 block text-[20px] font-regular leading-snug text-white antialiased">
@@ -323,8 +325,10 @@ export default {
       </div>
     </div>
   </div>
-  <div class="w-full flex justify-center items-center mt-5">
-    <div class="w-4/6 flex gap-5">
+  <div
+    class="sm:px-4 md:px-8 lg:px-10 xl:px-12 2xl:px-14 w-full flex justify-center items-center mt-5"
+  >
+    <div class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex gap-5">
       <div class="relative flex w-full rounded-xl bg-[#252141] bg-opacity-50">
         <div class="p-[24px]">
           <h5 class="mb-2 block text-[20px] font-regular leading-snug text-white antialiased">
