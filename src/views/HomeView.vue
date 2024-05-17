@@ -18,5 +18,6 @@ import Footer from '../components/organisms/Footer.vue'
     <Hero />
     <MarketEvolution />
     <ImpactOurMarket />
+    <EscapeOut />
   </main>
 </template>

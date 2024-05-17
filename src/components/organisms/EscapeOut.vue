@@ -3,15 +3,17 @@
 <template>
   <div class="w-full flex justify-center items-center mt-14">
     <div
-      class="w-5/6 flex justify-center items-center rounded-[40px] h-[650px] px-[135px] gap-20 relative overflow-hidden block z-10 bg-[url('/public/bg-escapeout.png')] bg-cover bg-no-repeat"
+      class="sm:w-full sm:flex-col sm:rounded-none sm:h-auto sm:p-0 sm:bg-white sm:gap-5 w-5/6 flex justify-center items-center rounded-[40px] h-[650px] px-[135px] gap-20 relative overflow-hidden block z-10 bg-[url('/public/bg-escapeout.png')] bg-cover bg-no-repeat"
     >
-      <div class="w-3/5">
-        <h6 class="mb-2 block text-[48px] font-regular leading-snug text-[#090914] antialiased">
+      <div class="sm:w-full sm:px-4 w-3/5">
+        <h6
+          class="sm:leading-none sm:text-[36px] sm:pt-10 mb-2 block text-[48px] font-regular leading-snug text-[#090914] antialiased"
+        >
           Porque o mercado precisa de uma saída de
           <span class="text-[#C3D600] font-bold">ESC</span>ape?
         </h6>
         <p
-          class="mb-2 block text-[18px] font-regular leading-snug text-[#090914] antialiased pt-[50px]"
+          class="sm:text-[16px] sm:pt-[10px] mb-2 block text-[18px] font-regular leading-snug text-[#090914] antialiased pt-[50px]"
         >
           Precisamos
           <span class="text-[#C3D600] font-bold">restaurar os elos perdidos da nossa corrente</span
@@ -20,7 +22,7 @@
           desenvolvida para atender as demandas do nosso mercado.
         </p>
       </div>
-      <div class="w-2/5">
+      <div class="sm:w-full sm:pb-10 w-2/5">
         <div class="w-full flex relative">
           <div class="w-full flex-col space-y-3">
             <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
