@@ -3,11 +3,11 @@
 <template>
   <div class="w-full flex justify-center items-center mt-14">
     <div
-      class="sm:w-full sm:flex-col sm:rounded-none sm:h-auto sm:p-0 sm:bg-white sm:gap-5 w-5/6 flex justify-center items-center rounded-[40px] h-[650px] px-[135px] gap-20 relative overflow-hidden block z-10 bg-[url('/public/bg-escapeout.png')] bg-cover bg-no-repeat"
+      class="sm:w-full sm:flex-col sm:rounded-none sm:h-auto sm:p-0 sm:bg-white sm:gap-5 md:w-full md:rounded-none md:px-7 lg:w-full lg:rounded-none lg:px-12 xl:w-full xl:rounded-none xl:px-7 2xl:w-full 2xl:rounded-none 2xl:px-7 w-5/6 flex justify-center items-center rounded-[40px] h-[650px] px-[135px] gap-20 relative overflow-hidden block z-10 bg-[url('/public/bg-escapeout.png')] bg-cover bg-no-repeat"
     >
       <div class="sm:w-full sm:px-4 w-3/5">
         <h6
-          class="sm:leading-none sm:text-[36px] sm:pt-10 mb-2 block text-[48px] font-regular leading-snug text-[#090914] antialiased"
+          class="sm:leading-none sm:text-[36px] sm:pt-10 md:text-[36px] lg:text-[36px] xl:text-[40px] 2xl:text-[40px] mb-2 block text-[48px] font-regular leading-snug text-[#090914] antialiased"
         >
           Porque o mercado precisa de uma saída de
           <span class="text-[#C3D600] font-bold">ESC</span>ape?
@@ -93,7 +93,7 @@
               <img class="object-cover rounded-full" src="https://picsum.photos/100" />
             </div>
           </div>
-          <div class="w-full flex-col space-y-3">
+          <div class="md:hidden w-full flex-col space-y-3">
             <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
               <img class="object-cover rounded-full" src="https://picsum.photos/100" />
             </div>
