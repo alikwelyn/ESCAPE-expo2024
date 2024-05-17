@@ -15,18 +15,17 @@ export default {
 
 <template>
   <slot name="icon"></slot>
-  <div class="flex-grow-0 flex-shrink-0 relative mt-5">
-    <div class="flex flex-col justify-start items-start">
-      <p
-        class="flex-grow-0 flex-shrink-0 text-[40px] font-bold text-left bg-gradient-to-tr from-[#fff] to-[#71717A] inline-block text-transparent bg-clip-text"
-      >
-        {{ title1 }}
-      </p>
-      <p
-        class="flex-grow-0 flex-shrink-0 text-[65px] -mt-6 font-bold text-left bg-gradient-to-tr from-[#fff] to-[#71717A] inline-block text-transparent bg-clip-text"
+  <div class="mt-5 mb-5">
+    <p
+      class="sm:text-[30px] text-[40px] font-bold text-left bg-gradient-to-tr from-[#fff] to-[#71717A] text-transparent bg-clip-text leading-tight"
+    >
+      {{ title1 }}
+      <br />
+      <span
+        class="sm:text-[36px] text-[65px] font-bold text-left bg-gradient-to-tr from-[#fff] to-[#71717A] text-transparent bg-clip-text leading-none"
       >
         {{ title2 }}
-      </p>
-    </div>
+      </span>
+    </p>
   </div>
 </template>

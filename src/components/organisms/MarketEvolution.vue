@@ -294,7 +294,9 @@ export default {
     <div class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex gap-5">
       <div class="relative flex w-full rounded-xl bg-[#252141] bg-opacity-50">
         <div class="p-[24px]">
-          <h5 class="mb-2 block text-[20px] font-regular leading-snug text-white antialiased">
+          <h5
+            class="sm:text-[16px] mb-2 block text-[20px] font-regular leading-snug text-white antialiased"
+          >
             Segundo estudo realizado pelo IBGE, em 2019
             <span class="text-[#C3D600] font-semibold"
               >o mercado chegou a 2,5 milhões de consumidores:</span
@@ -310,7 +312,9 @@ export default {
       </div>
       <div class="relative flex w-full rounded-xl bg-[#252141] bg-opacity-50">
         <div class="p-[24px]">
-          <h5 class="mb-2 block text-[20px] font-regular leading-snug text-white antialiased">
+          <h5
+            class="sm:text-[16px] mb-2 block text-[20px] font-regular leading-snug text-white antialiased"
+          >
             A USP realizou um estudo sobre a
             <span class="text-[#C3D600] font-semibold">frequência de consumo</span>
             do consumidor conforme a tabela abaixo:
@@ -331,7 +335,9 @@ export default {
     <div class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex gap-5">
       <div class="relative flex w-full rounded-xl bg-[#252141] bg-opacity-50">
         <div class="p-[24px]">
-          <h5 class="mb-2 block text-[20px] font-regular leading-snug text-white antialiased">
+          <h5
+            class="sm:text-[16px] mb-2 block text-[20px] font-regular leading-snug text-white antialiased"
+          >
             Com base nessas informações entendemos que
             <span class="text-[#C3D600] font-semibold"
               >150 mil consumidores de informação na rede social são suficientes para alcançar o
