@@ -24,5 +24,6 @@ import Footer from '../components/organisms/Footer.vue'
     <ExploreOurApp />
     <FutureUpdates />
     <Doubts />
+    <Footer />
   </main>
 </template>

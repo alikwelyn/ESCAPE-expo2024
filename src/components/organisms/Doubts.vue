@@ -22,7 +22,7 @@
       class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex justify-center items-center gap-5 mx-auto"
     >
       <div
-        class="w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
+        class="sm:h-[350px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
       >
         <div
           aria-hidden="true"
@@ -78,7 +78,7 @@
         </div>
       </div>
       <div
-        class="w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
+        class="sm:h-[350px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
       >
         <div
           aria-hidden="true"
@@ -138,7 +138,7 @@
       class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex justify-center items-center gap-5 mx-auto mt-5"
     >
       <div
-        class="w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
+        class="sm:h-[350px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
       >
         <div
           aria-hidden="true"
@@ -214,7 +214,7 @@
         </div>
       </div>
       <div
-        class="w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
+        class="sm:h-[350px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
       >
         <div
           aria-hidden="true"
