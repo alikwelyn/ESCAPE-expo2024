@@ -12,7 +12,9 @@ export default {
 
 <template>
   <div class="w-full flex justify-center items-center mt-14">
-    <div class="w-4/6 flex-col">
+    <div
+      class="sm:w-full sm:px-4 md:w-full md:px-8 lg:w-full lg:px-10 xl:w-full xl:px-12 2xl:w-full 2xl:px-14 w-4/6 flex-col"
+    >
       <TitleSection title1="SOBRE A" title2="ESC">
         <template #icon>
           <Logo />
@@ -20,12 +22,12 @@ export default {
       </TitleSection>
     </div>
   </div>
-  <div class="w-full flex justify-center items-center">
-    <div class="w-4/6 flex gap-5">
+  <div class="sm:px-4 md:px-8 lg:px-10 xl:px-12 2xl:px-14 w-full flex justify-center items-center">
+    <div class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex gap-5">
       <div class="relative flex w-full rounded-xl">
         <div class="w-full rounded-md bg-gradient-to-r from-[#6DDCFF] to-[#7F60F9] p-[1px]">
           <div
-            class="flex items-center justify-center bg-black bg-opacity-90 rounded-md py-[35px] px-[60px] gap-16 block z-10 bg-[url('/public/ellipse.png')] bg-bottom bg-cover bg-no-repeat"
+            class="sm:flex-col sm:px-5 md:flex-col md:px-5 lg:px-5 flex items-center justify-center bg-black bg-opacity-90 rounded-md py-[35px] px-[60px] gap-16 block z-10 bg-[url('/public/ellipse.png')] bg-bottom bg-cover bg-no-repeat"
           >
             <div class="flex-col h-full w-full items-center justify-center">
               <h6 class="block text-[50px] font-semibold leading-snug text-white antialiased">

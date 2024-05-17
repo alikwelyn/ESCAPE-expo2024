@@ -20,5 +20,6 @@ import Footer from '../components/organisms/Footer.vue'
     <ImpactOurMarket />
     <EscapeOut />
     <BecauseYouCan />
+    <AboutEsc />
   </main>
 </template>
