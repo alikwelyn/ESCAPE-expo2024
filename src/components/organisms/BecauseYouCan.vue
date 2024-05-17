@@ -9,17 +9,26 @@ export default {
 </script>
 
 <template>
-  <div class="w-full flex justify-center items-center mt-14">
-    <div class="w-4/6 flex justify-center items-center gap-5">
-      <img class="w-[598px] h-[577px] rounded-[20px]" src="/public/carvao.png" />
-      <div class="flex w-full">
-        <div class="p-[50px]">
+  <div class="sm:mt-5 md:mt-5 w-full flex justify-center items-center mt-14">
+    <div
+      class="sm:w-full sm:px-4 md:w-full md:px-8 lg:w-full lg:px-10 xl:w-full xl:px-12 2xl:w-full 2xl:px-14 w-4/6 flex justify-center items-center gap-5"
+    >
+      <img
+        class="sm:hidden md:hidden lg:w-[525px] lg:h-[507px] xl:w-[525px] xl:h-[507px] w-[598px] h-[577px] rounded-[20px]"
+        src="/public/carvao.png"
+      />
+      <div class="md:order-1 flex w-full">
+        <div class="sm:px-4 md:px-1 lg:px-5 xl:px-5 2xl:px-5 p-[50px]">
           <BecauseYouCanIcon />
-          <h6 class="mt-10 block text-[42px] font-semibold leading-snug text-white antialiased">
+          <h6
+            class="sm:text-[36px] lg:text-[36px] mt-10 block text-[42px] font-semibold leading-snug text-white antialiased"
+          >
             Porque na <span class="text-[#C3D600] font-bold">ESCAPE</span> pode conteúdo de
             narguile?
           </h6>
-          <p class="block text-[18px] font-regular leading-snug text-white antialiased pt-[40px]">
+          <p
+            class="sm:text-[16px] lg:text-[16px] block text-[18px] font-regular leading-snug text-white antialiased pt-[40px]"
+          >
             Porque é uma
             <span class="text-[#C3D600] font-bold">rede social para maiores de 18 anos</span> e que
             na política consta o tipo de conteúdo que será consumido pelo usuário.<br /><br />
