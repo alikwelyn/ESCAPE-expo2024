@@ -4,6 +4,7 @@ import Hero from '../components/organisms/Hero.vue'
 import MarketEvolution from '../components/organisms/MarketEvolution.vue'
 import ImpactOurMarket from '../components/organisms/ImpactOurMarket.vue'
 import EscapeOut from '../components/organisms/EscapeOut.vue'
+import BecauseYouCan from '../components/organisms/BecauseYouCan.vue'
 </script>
 
 <template>
@@ -13,5 +14,6 @@ import EscapeOut from '../components/organisms/EscapeOut.vue'
     <MarketEvolution />
     <ImpactOurMarket />
     <EscapeOut />
+    <BecauseYouCan />
   </main>
 </template>

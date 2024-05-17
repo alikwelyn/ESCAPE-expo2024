@@ -1,12 +1,12 @@
 <script>
-import MarketEvolutionIcon from '../atoms/MarketEvolutionIcon.vue'
+import ImpactOurMarketIcon from '../atoms/ImpactOurMarketIcon.vue'
 import TitleSection from '../molecules/TitleSection.vue'
 import PeopleChainTrue from '../atoms/peopleChainTrue.vue'
 import PeopleChainFalse from '../atoms/peopleChainFalse.vue'
 
 export default {
   components: {
-    MarketEvolutionIcon,
+    ImpactOurMarketIcon,
     TitleSection,
     PeopleChainTrue,
     PeopleChainFalse
@@ -18,7 +18,7 @@ export default {
   <div class="w-full flex justify-center items-center mt-14">
     <TitleSection title1="COMO AS RESTRIÇÕES" title2="IMPACTAM O NOSSO MERCADO?">
       <template #icon>
-        <MarketEvolutionIcon />
+        <ImpactOurMarketIcon />
       </template>
     </TitleSection>
   </div>
