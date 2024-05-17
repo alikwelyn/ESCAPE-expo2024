@@ -9,6 +9,7 @@ import AboutEsc from '../components/organisms/AboutEsc.vue'
 import ExploreOurApp from '../components/organisms/ExploreOurApp.vue'
 import FutureUpdates from '../components/organisms/FutureUpdates.vue'
 import Doubts from '../components/organisms/Doubts.vue'
+import Footer from '../components/organisms/Footer.vue'
 </script>
 
 <template>
@@ -23,5 +24,6 @@ import Doubts from '../components/organisms/Doubts.vue'
     <ExploreOurApp />
     <FutureUpdates />
     <Doubts />
+    <Footer />
   </main>
 </template>
