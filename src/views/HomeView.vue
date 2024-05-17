@@ -8,6 +8,7 @@ import BecauseYouCan from '../components/organisms/BecauseYouCan.vue'
 import AboutEsc from '../components/organisms/AboutEsc.vue'
 import ExploreOurApp from '../components/organisms/ExploreOurApp.vue'
 import FutureUpdates from '../components/organisms/FutureUpdates.vue'
+import Doubts from '../components/organisms/Doubts.vue'
 </script>
 
 <template>
@@ -21,5 +22,6 @@ import FutureUpdates from '../components/organisms/FutureUpdates.vue'
     <AboutEsc />
     <ExploreOurApp />
     <FutureUpdates />
+    <Doubts />
   </main>
 </template>

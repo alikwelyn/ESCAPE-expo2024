@@ -1,15 +1,11 @@
 <script>
 import FutureUpdatesIcon from '../atoms/FutureUpdatesIcon.vue'
 import TitleSection from '../molecules/TitleSection.vue'
-import PeopleChainTrue from '../atoms/peopleChainTrue.vue'
-import PeopleChainFalse from '../atoms/peopleChainFalse.vue'
 
 export default {
   components: {
     FutureUpdatesIcon,
-    TitleSection,
-    PeopleChainTrue,
-    PeopleChainFalse
+    TitleSection
   }
 }
 </script>
