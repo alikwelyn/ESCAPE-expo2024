@@ -1,14 +1,4 @@
-<script>
-import Logo from '../atoms/logo.vue'
-import TitleSection from '../molecules/TitleSection.vue'
-
-export default {
-  components: {
-    Logo,
-    TitleSection
-  }
-}
-</script>
+<script></script>
 
 <template>
   <div class="w-full flex-col justify-center items-center mt-14 text-center">

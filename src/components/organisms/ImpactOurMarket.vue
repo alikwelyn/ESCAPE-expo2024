@@ -16,11 +16,13 @@ export default {
 
 <template>
   <div class="w-full flex justify-center items-center mt-14">
-    <TitleSection title1="COMO AS RESTRIÇÕES" title2="IMPACTAM O NOSSO MERCADO?">
-      <template #icon>
-        <ImpactOurMarketIcon />
-      </template>
-    </TitleSection>
+    <div class="w-4/6 flex-col">
+      <TitleSection title1="COMO AS RESTRIÇÕES" title2="IMPACTAM O NOSSO MERCADO?">
+        <template #icon>
+          <ImpactOurMarketIcon />
+        </template>
+      </TitleSection>
+    </div>
   </div>
   <div class="w-full flex justify-center items-center">
     <div class="w-4/6 flex-col mb-4">
