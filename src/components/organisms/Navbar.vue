@@ -11,5 +11,3 @@ import Logo from './../atoms/logo.vue'
     </div>
   </div>
 </template>
-
-<style scoped></style>
