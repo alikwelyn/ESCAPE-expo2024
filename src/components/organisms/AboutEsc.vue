@@ -1,15 +1,11 @@
 <script>
 import Logo from '../atoms/logo.vue'
 import TitleSection from '../molecules/TitleSection.vue'
-import PeopleChainTrue from '../atoms/peopleChainTrue.vue'
-import PeopleChainFalse from '../atoms/peopleChainFalse.vue'
 
 export default {
   components: {
     Logo,
-    TitleSection,
-    PeopleChainTrue,
-    PeopleChainFalse
+    TitleSection
   }
 }
 </script>

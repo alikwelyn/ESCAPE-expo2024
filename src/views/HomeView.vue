@@ -6,6 +6,7 @@ import ImpactOurMarket from '../components/organisms/ImpactOurMarket.vue'
 import EscapeOut from '../components/organisms/EscapeOut.vue'
 import BecauseYouCan from '../components/organisms/BecauseYouCan.vue'
 import AboutEsc from '../components/organisms/AboutEsc.vue'
+import ExploreOurApp from '../components/organisms/ExploreOurApp.vue'
 </script>
 
 <template>
@@ -17,5 +18,6 @@ import AboutEsc from '../components/organisms/AboutEsc.vue'
     <EscapeOut />
     <BecauseYouCan />
     <AboutEsc />
+    <ExploreOurApp />
   </main>
 </template>
