@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <div class="w-full flex justify-center items-center mt-14">
+  <div class="sm:mt-5 w-full flex justify-center items-center mt-14">
     <div
       class="sm:w-full sm:px-4 md:w-full md:px-8 lg:w-full lg:px-10 xl:w-full xl:px-12 2xl:w-full 2xl:px-14 w-4/6 flex-col"
     >

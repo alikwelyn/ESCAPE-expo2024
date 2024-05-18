@@ -18,7 +18,7 @@ export default {
         src="/public/carvao.png"
       />
       <div class="md:order-1 flex w-full">
-        <div class="sm:px-4 md:px-1 lg:px-5 xl:px-5 2xl:px-5 p-[50px]">
+        <div class="sm:px-0 md:px-1 lg:px-5 xl:px-5 2xl:px-5 p-[50px]">
           <BecauseYouCanIcon />
           <h6
             class="sm:text-[36px] lg:text-[36px] mt-10 block text-[42px] font-semibold leading-snug text-white antialiased"
