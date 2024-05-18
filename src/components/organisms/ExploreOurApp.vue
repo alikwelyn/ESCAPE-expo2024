@@ -1,4 +1,20 @@
-<script></script>
+<script>
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Autoplay, Keyboard } from 'swiper/modules'
+import 'swiper/css'
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide
+  },
+  setup() {
+    return {
+      modules: [Autoplay, Keyboard]
+    }
+  }
+}
+</script>
 
 <template>
   <div class="w-full flex-col justify-center items-center mt-14 text-center">
@@ -14,22 +30,75 @@
     </p>
   </div>
   <div class="w-full flex justify-center items-center mt-[50px]">
-    <div class="w-full flex gap-10">
-      <div class="w-full">
-        <img src="/public/esc-feed.png" />
-      </div>
-      <div class="w-full">
-        <img src="/public/esc-feed.png" />
-      </div>
-      <div class="w-full">
-        <img src="/public/esc-feed.png" />
-      </div>
-      <div class="w-full">
-        <img src="/public/esc-feed.png" />
-      </div>
-      <div class="w-full">
-        <img src="/public/esc-feed.png" />
-      </div>
+    <div class="relative w-full">
+      <div
+        class="absolute top-0 left-0 h-full w-16 bg-gradient-to-r from-[#12111f] to-[transparent] z-10 pointer-events-none"
+      ></div>
+      <div
+        class="absolute top-0 right-0 h-full w-16 bg-gradient-to-l from-[#12111f] to-transparent z-10 pointer-events-none"
+      ></div>
+      <swiper
+        class="w-full"
+        :modules="modules"
+        :grabCursor="true"
+        :freeMode="true"
+        :loop="true"
+        :mousewheel="false"
+        :centeredSlides="true"
+        :keyboard="{ enabled: true }"
+        :autoplay="{ delay: 0, disableOnInteraction: false }"
+        :speed="18000"
+        :breakpoints="{
+          320: {
+            slidesPerView: 1.3,
+            spaceBetween: 20
+          },
+          768: {
+            slidesPerView: 2.2,
+            spaceBetween: 20
+          },
+          1024: {
+            slidesPerView: 2.2,
+            spaceBetween: 20
+          },
+          1024: {
+            slidesPerView: 3.2,
+            spaceBetween: 20
+          },
+          1600: {
+            slidesPerView: 4.2,
+            spaceBetween: 50
+          }
+        }"
+      >
+        <swiper-slide>
+          <img src="/public/esc-feed.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/public/esc-feed.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/public/esc-feed.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/public/esc-feed.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/public/esc-feed.png" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="/public/esc-feed.png" />
+        </swiper-slide>
+      </swiper>
     </div>
   </div>
 </template>
+
+<style scoped>
+.swiper-slide {
+  width: fit-content;
+}
+.swiper-container-free-mode > .swiper-wrapper {
+  transition-timing-function: linear;
+}
+</style>
