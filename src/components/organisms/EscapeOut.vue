@@ -1,4 +1,61 @@
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      line1: [
+        'https://picsum.photos/100?random=1',
+        'https://picsum.photos/100?random=2',
+        'https://picsum.photos/100?random=3',
+        'https://picsum.photos/100?random=4',
+        'https://picsum.photos/100?random=5',
+        'https://picsum.photos/100?random=6',
+        'https://picsum.photos/100?random=7'
+      ],
+      line2: [
+        'https://picsum.photos/100?random=11',
+        'https://picsum.photos/100?random=22',
+        'https://picsum.photos/100?random=33',
+        'https://picsum.photos/100?random=44',
+        'https://picsum.photos/100?random=55',
+        'https://picsum.photos/100?random=66',
+        'https://picsum.photos/100?random=77'
+      ],
+      line3: [
+        'https://picsum.photos/100?random=111',
+        'https://picsum.photos/100?random=222',
+        'https://picsum.photos/100?random=333',
+        'https://picsum.photos/100?random=444',
+        'https://picsum.photos/100?random=555',
+        'https://picsum.photos/100?random=666',
+        'https://picsum.photos/100?random=777'
+      ],
+      line4: [
+        'https://picsum.photos/100?random=1111',
+        'https://picsum.photos/100?random=2222',
+        'https://picsum.photos/100?random=3333',
+        'https://picsum.photos/100?random=4444',
+        'https://picsum.photos/100?random=5555',
+        'https://picsum.photos/100?random=6666',
+        'https://picsum.photos/100?random=7777'
+      ]
+    }
+  },
+  computed: {
+    duplicatedImagesLine1() {
+      return this.line1.concat(this.line1)
+    },
+    duplicatedImagesLine2() {
+      return this.line2.concat(this.line2)
+    },
+    duplicatedImagesLine3() {
+      return this.line3.concat(this.line3)
+    },
+    duplicatedImagesLine4() {
+      return this.line4.concat(this.line4)
+    }
+  }
+}
+</script>
 
 <template>
   <div class="w-full flex justify-center items-center mt-14">
@@ -23,101 +80,76 @@
         </p>
       </div>
       <div class="sm:w-full sm:pb-10 w-2/5">
-        <div class="w-full flex relative">
-          <div class="w-full flex-col space-y-3">
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
+        <div class="sm:hidden w-full flex relative">
+          <div class="w-full flex-col space-y-3 animate-infinite-scroll-up">
+            <div
+              v-for="(image, index) in duplicatedImagesLine1"
+              :key="index"
+              class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3"
+            >
+              <img class="object-cover rounded-full" :src="image" />
             </div>
           </div>
-          <div class="w-full flex-col space-y-3">
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
+          <div class="w-full flex-col space-y-3 animate-infinite-scroll-down">
+            <div
+              v-for="(image, index) in duplicatedImagesLine2"
+              :key="index"
+              class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3"
+            >
+              <img class="object-cover rounded-full" :src="image" />
             </div>
           </div>
-          <div class="w-full flex-col space-y-3">
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
+          <div class="w-full flex-col space-y-3 animate-infinite-scroll-up">
+            <div
+              v-for="(image, index) in duplicatedImagesLine3"
+              :key="index"
+              class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3"
+            >
+              <img class="object-cover rounded-full" :src="image" />
             </div>
           </div>
-          <div class="md:hidden w-full flex-col space-y-3">
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
+          <div class="md:hidden w-full flex-col space-y-3 animate-infinite-scroll-down">
+            <div
+              v-for="(image, index) in duplicatedImagesLine4"
+              :key="index"
+              class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3"
+            >
+              <img class="object-cover rounded-full" :src="image" />
             </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
-            <div class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full">
-              <img class="object-cover rounded-full" src="https://picsum.photos/100" />
-            </div>
+          </div>
+        </div>
+        <div class="md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden w-full flex flex-col">
+          <div class="w-full inline-flex flex-nowrap">
+            <ul class="flex [&_li]:mx-2 [&_img]:max-w-none horizontal-scroll">
+              <li v-for="(image, index) in duplicatedImagesLine1" :key="index">
+                <img class="object-cover rounded-full max-w-full max-h-full" :src="image" />
+              </li>
+            </ul>
+          </div>
+          <div class="w-full inline-flex flex-nowrap mt-5">
+            <ul class="flex [&_li]:mx-2 [&_img]:max-w-none horizontal-scroll">
+              <li v-for="(image, index) in duplicatedImagesLine2" :key="index">
+                <img class="object-cover rounded-full max-w-full max-h-full" :src="image" />
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+@keyframes horizontalScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.horizontal-scroll {
+  animation: horizontalScroll 150s linear infinite;
+}
+</style>

@@ -12,7 +12,20 @@ module.exports = {
       sm: { min: '320px', max: '767px' }
     },
     extend: {
-      colors: {}
+      animation: {
+        'infinite-scroll-up': 'infinite-scroll-up 300s linear infinite',
+        'infinite-scroll-down': 'infinite-scroll-down 300s linear infinite'
+      },
+      keyframes: {
+        'infinite-scroll-up': {
+          from: { transform: 'translateY(0)' },
+          to: { transform: 'translateY(-100%)' }
+        },
+        'infinite-scroll-down': {
+          from: { transform: 'translateY(0)' },
+          to: { transform: 'translateY(100%)' }
+        }
+      }
     }
   },
   plugins: []
