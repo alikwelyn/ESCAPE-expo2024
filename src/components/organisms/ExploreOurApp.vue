@@ -8,6 +8,137 @@ export default {
     Swiper,
     SwiperSlide
   },
+  data() {
+    return {
+      items: [
+        {
+          title: 'Dashboard',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/dashboard.png'
+        },
+        {
+          title: 'Dashboard - Amigos',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/dash-amigos.png'
+        },
+        {
+          title: 'Dashboard - Comentários',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/dash-comentarios.png'
+        },
+        {
+          title: 'Dashboard - Trending Topics',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/dash-trending-topics.png'
+        },
+        {
+          title: 'Dashboard - EscTV',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/dash-esctv.png'
+        },
+        {
+          title: 'Dashboard - EscTV',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/dash-esctv-assistindo.png'
+        },
+        {
+          title: 'Dashboard - Grupos',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/dash-grupos.png'
+        },
+        {
+          title: 'Dashboard - Notificações',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/notificacoes.png'
+        },
+        {
+          title: 'Dashboard - Descobrir',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/descobrir.png'
+        },
+        {
+          title: 'Dashboard - Buscas Recentes',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/busca-recente.png'
+        },
+        {
+          title: 'Dashboard - Tipo de Post',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/tipo-post.png'
+        },
+        {
+          title: 'Dashboard - Preview Post',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/preview-post.png'
+        },
+        {
+          title: 'Dashboard - Daily',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/daily.png'
+        },
+        {
+          title: 'Dashboard - Beats',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/beats.png'
+        },
+        {
+          title: 'Dashboard - Perfil Usuário',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/perfil-usuario.png'
+        },
+        {
+          title: 'Dashboard - Perfil Usuário',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/perfil-usuario-configuracoes.png'
+        },
+        {
+          title: 'Dashboard - Perfil Comercial Free',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/perfil-comercial-free.png'
+        },
+        {
+          title: 'Dashboard - Perfil Comercial Gold',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/perfil-comercial-gold.png'
+        },
+        {
+          title: 'Dashboard - Perfil Comercial Premium',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/perfil-comercial-premium.png'
+        },
+        {
+          title: 'Dashboard - Perfil Comercial Premium Videos',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/perfil-comercial-premium-videos.png'
+        },
+        {
+          title: 'Dashboard - Perfil Comercial Premium Catálogo',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/perfil-comercial-catalogo.png'
+        },
+        {
+          title: 'Dashboard - Catálogo',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/catalogo-produto.png'
+        },
+        {
+          title: 'Dashboard - Catálogo',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/catalogo-produto-detalhes.png'
+        },
+        {
+          title: 'Dashboard - Perfil Comercial Premium Grupo',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/perfil-comercial-premium-grupo.png'
+        },
+        {
+          title: 'Dashboard - Grupo',
+          text: 'lorem ipsum dolor site amt',
+          img: '/screens/grupo.png'
+        }
+      ]
+    }
+  },
   setup() {
     return {
       modules: [Autoplay, Keyboard]
@@ -48,11 +179,10 @@ export default {
         :modules="modules"
         :grabCursor="true"
         :freeMode="true"
-        :loop="true"
         :mousewheel="false"
         :centeredSlides="true"
         :keyboard="{ enabled: true }"
-        :autoplay="{ delay: 0, disableOnInteraction: false }"
+        :autoplay="{ delay: 0, disableOnInteraction: true }"
         :speed="18000"
         :breakpoints="{
           320: {
@@ -77,23 +207,18 @@ export default {
           }
         }"
       >
-        <swiper-slide>
-          <img src="/esc-feed.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/esc-feed.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/esc-feed.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/esc-feed.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/esc-feed.png" />
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/esc-feed.png" />
+        <swiper-slide v-for="(item, index) in items" :key="index">
+          <card class="relative w-full">
+            <img :src="item.img" class="object-cover w-full h-full rounded-[20px]" />
+            <div
+              class="absolute w-full h-full bottom-0 bg-gradient-to-t from-slate-950 from-2% via-transparent via-50% to-transparent to-10% flex flex-col items-start justify-end text-left p-3 border-[3px] border-[#C3D600] rounded-[20px] pb-[20px]"
+            >
+              <h6 class="text-[24px] text-[#C3D600] font-bold text-left">{{ item.title }}</h6>
+              <p class="hidden text-[16px] text-white font-semibold">
+                {{ item.text }}
+              </p>
+            </div>
+          </card>
         </swiper-slide>
       </swiper>
     </div>
