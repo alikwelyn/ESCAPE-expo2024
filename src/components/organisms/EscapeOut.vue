@@ -3,40 +3,40 @@ export default {
   data() {
     return {
       line1: [
-        'https://picsum.photos/100?random=1',
-        'https://picsum.photos/100?random=2',
-        'https://picsum.photos/100?random=3',
-        'https://picsum.photos/100?random=4',
-        'https://picsum.photos/100?random=5',
-        'https://picsum.photos/100?random=6',
-        'https://picsum.photos/100?random=7'
+        'https://randomuser.me/api/portraits/men/1.jpg',
+        'https://randomuser.me/api/portraits/women/2.jpg',
+        'https://randomuser.me/api/portraits/men/3.jpg',
+        'https://randomuser.me/api/portraits/women/4.jpg',
+        'https://randomuser.me/api/portraits/men/5.jpg',
+        'https://randomuser.me/api/portraits/women/6.jpg',
+        'https://randomuser.me/api/portraits/men/7.jpg'
       ],
       line2: [
-        'https://picsum.photos/100?random=11',
-        'https://picsum.photos/100?random=22',
-        'https://picsum.photos/100?random=33',
-        'https://picsum.photos/100?random=44',
-        'https://picsum.photos/100?random=55',
-        'https://picsum.photos/100?random=66',
-        'https://picsum.photos/100?random=77'
+        'https://randomuser.me/api/portraits/women/11.jpg',
+        'https://randomuser.me/api/portraits/men/12.jpg',
+        'https://randomuser.me/api/portraits/women/13.jpg',
+        'https://randomuser.me/api/portraits/men/14.jpg',
+        'https://randomuser.me/api/portraits/women/15.jpg',
+        'https://randomuser.me/api/portraits/men/16.jpg',
+        'https://randomuser.me/api/portraits/women/17.jpg'
       ],
       line3: [
-        'https://picsum.photos/100?random=111',
-        'https://picsum.photos/100?random=222',
-        'https://picsum.photos/100?random=333',
-        'https://picsum.photos/100?random=444',
-        'https://picsum.photos/100?random=555',
-        'https://picsum.photos/100?random=666',
-        'https://picsum.photos/100?random=777'
+        'https://randomuser.me/api/portraits/men/21.jpg',
+        'https://randomuser.me/api/portraits/women/22.jpg',
+        'https://randomuser.me/api/portraits/men/23.jpg',
+        'https://randomuser.me/api/portraits/women/24.jpg',
+        'https://randomuser.me/api/portraits/men/25.jpg',
+        'https://randomuser.me/api/portraits/women/26.jpg',
+        'https://randomuser.me/api/portraits/men/27.jpg'
       ],
       line4: [
-        'https://picsum.photos/100?random=1111',
-        'https://picsum.photos/100?random=2222',
-        'https://picsum.photos/100?random=3333',
-        'https://picsum.photos/100?random=4444',
-        'https://picsum.photos/100?random=5555',
-        'https://picsum.photos/100?random=6666',
-        'https://picsum.photos/100?random=7777'
+        'https://randomuser.me/api/portraits/women/31.jpg',
+        'https://randomuser.me/api/portraits/men/32.jpg',
+        'https://randomuser.me/api/portraits/women/33.jpg',
+        'https://randomuser.me/api/portraits/men/34.jpg',
+        'https://randomuser.me/api/portraits/women/35.jpg',
+        'https://randomuser.me/api/portraits/men/36.jpg',
+        'https://randomuser.me/api/portraits/women/37.jpg'
       ]
     }
   },
@@ -91,7 +91,7 @@ export default {
             <div
               v-for="(image, index) in duplicatedImagesLine1"
               :key="index"
-              class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3"
+              class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3 blur-sm"
             >
               <img class="object-cover rounded-full" :src="image" />
             </div>
@@ -100,7 +100,7 @@ export default {
             <div
               v-for="(image, index) in duplicatedImagesLine2"
               :key="index"
-              class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3"
+              class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3 blur-sm"
             >
               <img class="object-cover rounded-full" :src="image" />
             </div>
@@ -109,7 +109,7 @@ export default {
             <div
               v-for="(image, index) in duplicatedImagesLine3"
               :key="index"
-              class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3"
+              class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3 blur-sm"
             >
               <img class="object-cover rounded-full" :src="image" />
             </div>
@@ -118,7 +118,7 @@ export default {
             <div
               v-for="(image, index) in duplicatedImagesLine4"
               :key="index"
-              class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3"
+              class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3 blur-sm"
             >
               <img class="object-cover rounded-full" :src="image" />
             </div>
@@ -127,14 +127,22 @@ export default {
         <div class="md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden w-full flex flex-col">
           <div class="w-full inline-flex flex-nowrap">
             <ul class="flex [&_li]:mx-2 [&_img]:max-w-none horizontal-scroll">
-              <li v-for="(image, index) in duplicatedImagesLine1" :key="index">
+              <li
+                v-for="(image, index) in duplicatedImagesLine1"
+                :key="index"
+                class="border-[5px] border-[#C3D600] rounded-full blur-sm"
+              >
                 <img class="object-cover rounded-full max-w-full max-h-full" :src="image" />
               </li>
             </ul>
           </div>
           <div class="w-full inline-flex flex-nowrap mt-5">
             <ul class="flex [&_li]:mx-2 [&_img]:max-w-none horizontal-scroll">
-              <li v-for="(image, index) in duplicatedImagesLine2" :key="index">
+              <li
+                v-for="(image, index) in duplicatedImagesLine2"
+                :key="index"
+                class="border-[5px] border-[#C3D600] rounded-full blur-sm"
+              >
                 <img class="object-cover rounded-full max-w-full max-h-full" :src="image" />
               </li>
             </ul>
