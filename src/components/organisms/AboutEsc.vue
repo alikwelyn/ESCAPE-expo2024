@@ -33,7 +33,7 @@ export default {
       <div class="relative flex w-full rounded-xl">
         <div class="w-full rounded-md bg-gradient-to-r from-[#6DDCFF] to-[#7F60F9] p-[1px]">
           <div
-            class="sm:flex-col sm:px-5 md:flex-col md:px-5 lg:px-5 flex items-center justify-center bg-black bg-opacity-90 rounded-md py-[35px] px-[60px] gap-16 block z-10 bg-[url('/public/ellipse.png')] bg-bottom bg-cover bg-no-repeat"
+            class="sm:flex-col sm:px-5 md:flex-col md:px-5 lg:px-5 flex items-center justify-center bg-black bg-opacity-90 rounded-md py-[35px] px-[60px] gap-16 block z-10 bg-[url('/ellipse.png')] bg-bottom bg-cover bg-no-repeat"
           >
             <div
               class="flex-col h-full w-full items-center justify-center"

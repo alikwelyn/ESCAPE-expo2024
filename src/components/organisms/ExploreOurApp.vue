@@ -78,22 +78,22 @@ export default {
         }"
       >
         <swiper-slide>
-          <img src="/public/esc-feed.png" />
+          <img src="/esc-feed.png" />
         </swiper-slide>
         <swiper-slide>
-          <img src="/public/esc-feed.png" />
+          <img src="/esc-feed.png" />
         </swiper-slide>
         <swiper-slide>
-          <img src="/public/esc-feed.png" />
+          <img src="/esc-feed.png" />
         </swiper-slide>
         <swiper-slide>
-          <img src="/public/esc-feed.png" />
+          <img src="/esc-feed.png" />
         </swiper-slide>
         <swiper-slide>
-          <img src="/public/esc-feed.png" />
+          <img src="/esc-feed.png" />
         </swiper-slide>
         <swiper-slide>
-          <img src="/public/esc-feed.png" />
+          <img src="/esc-feed.png" />
         </swiper-slide>
       </swiper>
     </div>

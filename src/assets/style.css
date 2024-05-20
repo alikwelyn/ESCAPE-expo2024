@@ -11,7 +11,7 @@
 
 body {
   background:
-    url('../../public/bg.png') no-repeat,
-    url('../../../public/circle-green.png') no-repeat #12111f;
+    url('/bg.png') no-repeat,
+    url('/circle-green.png') no-repeat #12111f;
   background-size: 100%;
 }

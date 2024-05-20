@@ -66,7 +66,7 @@ export default {
     data-aos-easing="zoom-out"
   >
     <div
-      class="sm:w-full sm:flex-col sm:rounded-none sm:h-auto sm:p-0 sm:bg-white sm:gap-5 md:w-full md:rounded-none md:px-7 lg:w-full lg:rounded-none lg:px-12 xl:w-full xl:rounded-none xl:px-7 2xl:w-full 2xl:rounded-none 2xl:px-7 w-5/6 flex justify-center items-center rounded-[40px] h-[650px] px-[135px] gap-20 relative overflow-hidden block z-10 bg-[url('/public/bg-escapeout.png')] bg-cover bg-no-repeat"
+      class="sm:w-full sm:flex-col sm:rounded-none sm:h-auto sm:p-0 sm:bg-white sm:gap-5 md:w-full md:rounded-none md:px-7 lg:w-full lg:rounded-none lg:px-12 xl:w-full xl:rounded-none xl:px-7 2xl:w-full 2xl:rounded-none 2xl:px-7 w-5/6 flex justify-center items-center rounded-[40px] h-[650px] px-[135px] gap-20 relative overflow-hidden block z-10 bg-[url('/bg-escapeout.png')] bg-cover bg-no-repeat"
     >
       <div class="sm:w-full sm:px-4 w-3/5">
         <h6

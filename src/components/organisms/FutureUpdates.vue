@@ -627,7 +627,7 @@ export default {
           </div>
         </div>
       </div>
-      <img src="/public/esc-feed.png" />
+      <img src="/esc-feed.png" />
     </div>
   </div>
 </template>

@@ -15,18 +15,18 @@ export default {
     >
       <img
         class="sm:hidden md:hidden lg:w-[525px] lg:h-[507px] xl:w-[525px] xl:h-[507px] w-[598px] h-[577px] rounded-[20px]"
-        src="/public/carvao.png"
-        data-aos="fade-right"
+        src="/carvao.png"
+        data-aos="fade-down"
         data-aos-delay="150"
         data-aos-duration="1000"
-        data-aos-easing="fade-left"
+        data-aos-easing="fade-up"
       />
       <div
         class="md:order-1 flex w-full"
-        data-aos="fade-left"
+        data-aos="fade-down"
         data-aos-delay="300"
         data-aos-duration="1000"
-        data-aos-easing="fade-right"
+        data-aos-easing="fade-up"
       >
         <div class="sm:px-0 md:px-1 lg:px-5 xl:px-5 2xl:px-5 p-[50px]">
           <BecauseYouCanIcon />
