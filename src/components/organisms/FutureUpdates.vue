@@ -1,11 +1,23 @@
 <script>
 import FutureUpdatesIcon from '../atoms/FutureUpdatesIcon.vue'
 import TitleSection from '../molecules/TitleSection.vue'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Navigation, Pagination, Keyboard } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 export default {
   components: {
     FutureUpdatesIcon,
-    TitleSection
+    TitleSection,
+    Swiper,
+    SwiperSlide
+  },
+  setup() {
+    return {
+      modules: [Navigation, Pagination, Keyboard]
+    }
   }
 }
 </script>
@@ -19,7 +31,7 @@ export default {
     data-aos-easing="fade-left"
   >
     <div
-      class="sm:flex-col sm:w-full sm:px-4 md:flex-col md:w-full md:px-8 lg:w-full lg:px-10 xl:w-full xl:px-12 2xl:w-full 2xl:px-14 w-4/6 flex justify-center items-center"
+      class="sm:hidden md:hidden lg:hidden lg:px-10 xl:w-full xl:px-12 2xl:w-full 2xl:px-14 w-4/6 flex justify-center items-center"
     >
       <div class="flex w-full">
         <div class="sm:pr-0 md:pr-0 lg:pr-5 w-full flex-col pr-[60px]">
@@ -629,5 +641,90 @@ export default {
       </div>
       <img src="/esc-feed.png" />
     </div>
+    <div
+      class="sm:block sm:w-full sm:px-4 md:block md:w-full md:px-8 lg:block lg:w-full lg:px-10 xl:hidden 2xl:hidden 3xl:hidden w-4/6 flex justify-center items-center"
+    >
+      <div class="flex w-full">
+        <div class="w-full flex-col">
+          <TitleSection title1="FIQUE POR DENTRO DAS" title2="ATUALIZAÇÕES FUTURAS">
+            <template #icon>
+              <FutureUpdatesIcon />
+            </template>
+          </TitleSection>
+        </div>
+      </div>
+      <div class="flex w-full">
+        <swiper
+          class="w-full"
+          :modules="modules"
+          :grabCursor="true"
+          :mousewheel="false"
+          :keyboard="{ enabled: true }"
+          :navigation="true"
+          :pagination="true"
+          :breakpoints="{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20
+            }
+          }"
+        >
+          <swiper-slide>
+            <img src="/esc-feed.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="/esc-feed.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="/esc-feed.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="/esc-feed.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="/esc-feed.png" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="/esc-feed.png" />
+          </swiper-slide>
+        </swiper>
+      </div>
+    </div>
   </div>
 </template>
+
+<style>
+.swiper {
+  --swiper-navigation-color: #fff !important;
+  --swiper-pagination-color: #fff !important;
+  --swiper-navigation-size: 20px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  padding: 20px;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  background-color: #c3d600;
+  border-radius: 5px;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  background-color: #c3d600;
+  border-radius: 5px;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: white;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #c3d600;
+}
+</style>

@@ -29,7 +29,7 @@ export default {
     >
       Explore cada canto do nosso aplicativo
     </h2>
-    <p class="mb-2 block text-[18px] font-regular leading-snug text-white antialiased">
+    <p class="sm:px-4 mb-2 block text-[18px] font-regular leading-snug text-white antialiased">
       Descubra cada canto do
       <span class="text-[#C3D600] font-bold">nosso aplicativo e junte-se a nós</span> para uma<br />experiência
       completa.
