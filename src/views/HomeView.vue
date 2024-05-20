@@ -13,7 +13,7 @@ import Footer from '../components/organisms/Footer.vue'
 </script>
 
 <template>
-  <main>
+  <main class="body">
     <Navbar />
     <Hero />
     <MarketEvolution />
@@ -27,3 +27,12 @@ import Footer from '../components/organisms/Footer.vue'
     <Footer />
   </main>
 </template>
+
+<style scoped>
+.body {
+  background:
+    url('/bg.png') no-repeat,
+    url('/circle-green.png') no-repeat #12111f;
+  background-size: 100%;
+}
+</style>

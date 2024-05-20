@@ -36,14 +36,7 @@ export default {
 </template>
 
 <style>
-body.loading {
-  background-color: #12111f;
-}
-
 body {
-  background:
-    url('/bg.png') no-repeat,
-    url('/circle-green.png') no-repeat #12111f;
-  background-size: 100%;
+  background-color: #12111f;
 }
 </style>
