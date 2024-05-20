@@ -14,127 +14,127 @@ export default {
         {
           title: 'Dashboard',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/dashboard.png'
+          img: '/expo/screens/dashboard.png'
         },
         {
           title: 'Dashboard - Amigos',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/dash-amigos.png'
+          img: '/expo/screens/dash-amigos.png'
         },
         {
           title: 'Dashboard - Comentários',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/dash-comentarios.png'
+          img: '/expo/screens/dash-comentarios.png'
         },
         {
           title: 'Dashboard - Trending Topics',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/dash-trending-topics.png'
+          img: '/expo/screens/dash-trending-topics.png'
         },
         {
           title: 'Dashboard - EscTV',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/dash-esctv.png'
+          img: '/expo/screens/dash-esctv.png'
         },
         {
           title: 'Dashboard - EscTV',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/dash-esctv-assistindo.png'
+          img: '/expo/screens/dash-esctv-assistindo.png'
         },
         {
           title: 'Dashboard - Grupos',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/dash-grupos.png'
+          img: '/expo/screens/dash-grupos.png'
         },
         {
           title: 'Dashboard - Notificações',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/notificacoes.png'
+          img: '/expo/screens/notificacoes.png'
         },
         {
           title: 'Dashboard - Descobrir',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/descobrir.png'
+          img: '/expo/screens/descobrir.png'
         },
         {
           title: 'Dashboard - Buscas Recentes',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/busca-recente.png'
+          img: '/expo/screens/busca-recente.png'
         },
         {
           title: 'Dashboard - Tipo de Post',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/tipo-post.png'
+          img: '/expo/screens/tipo-post.png'
         },
         {
           title: 'Dashboard - Preview Post',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/preview-post.png'
+          img: '/expo/screens/preview-post.png'
         },
         {
           title: 'Dashboard - Daily',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/daily.png'
+          img: '/expo/screens/daily.png'
         },
         {
           title: 'Dashboard - Beats',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/beats.png'
+          img: '/expo/screens/beats.png'
         },
         {
           title: 'Dashboard - Perfil Usuário',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/perfil-usuario.png'
+          img: '/expo/screens/perfil-usuario.png'
         },
         {
           title: 'Dashboard - Perfil Usuário',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/perfil-usuario-configuracoes.png'
+          img: '/expo/screens/perfil-usuario-configuracoes.png'
         },
         {
           title: 'Dashboard - Perfil Comercial Free',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/perfil-comercial-free.png'
+          img: '/expo/screens/perfil-comercial-free.png'
         },
         {
           title: 'Dashboard - Perfil Comercial Gold',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/perfil-comercial-gold.png'
+          img: '/expo/screens/perfil-comercial-gold.png'
         },
         {
           title: 'Dashboard - Perfil Comercial Premium',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/perfil-comercial-premium.png'
+          img: '/expo/screens/perfil-comercial-premium.png'
         },
         {
           title: 'Dashboard - Perfil Comercial Premium Videos',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/perfil-comercial-premium-videos.png'
+          img: '/expo/screens/perfil-comercial-premium-videos.png'
         },
         {
           title: 'Dashboard - Perfil Comercial Premium Catálogo',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/perfil-comercial-catalogo.png'
+          img: '/expo/screens/perfil-comercial-catalogo.png'
         },
         {
           title: 'Dashboard - Catálogo',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/catalogo-produto.png'
+          img: '/expo/screens/catalogo-produto.png'
         },
         {
           title: 'Dashboard - Catálogo',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/catalogo-produto-detalhes.png'
+          img: '/expo/screens/catalogo-produto-detalhes.png'
         },
         {
           title: 'Dashboard - Perfil Comercial Premium Grupo',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/perfil-comercial-premium-grupo.png'
+          img: '/expo/screens/perfil-comercial-premium-grupo.png'
         },
         {
           title: 'Dashboard - Grupo',
           text: 'lorem ipsum dolor site amt',
-          img: '/screens/grupo.png'
+          img: '/expo/screens/grupo.png'
         }
       ]
     }

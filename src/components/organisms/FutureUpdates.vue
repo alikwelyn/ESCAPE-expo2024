@@ -33,55 +33,55 @@ export default {
           name: 'LOJA',
           icon: markRaw(CartIcon),
           text: 'Venda produtos ou faça compras com facilidade, garantindo segurança e proteção em todas as transações.',
-          img: '/screens/em-breve/loja.png'
+          img: '/expo/screens/em-breve/loja.png'
         },
         {
           name: 'ESC DESKTOP',
           icon: markRaw(DesktopIcon),
           text: 'EM BREVE!!',
-          img: '/screens/em-breve/esc-desktop.png'
+          img: '/expo/screens/em-breve/esc-desktop.png'
         },
         {
           name: 'MOEDA PRÓPRIA',
           icon: markRaw(MoneyIcon),
           text: 'Encontre, adquira, aproveite! Explore e compre com suas moedas dentro do aplicativo.',
-          img: '/screens/em-breve/moeda.png'
+          img: '/expo/screens/em-breve/moeda.png'
         },
         {
           name: 'ESC LIVES',
           icon: markRaw(EyeIcon),
           text: 'Transmita momentos, converse com seguidores e mergulhe na experiência de livestream.',
-          img: '/screens/em-breve/esc-lives.png'
+          img: '/expo/screens/em-breve/esc-lives.png'
         },
         {
           name: 'ESC FRIENDS',
           icon: markRaw(UsersIcon),
           text: 'Encontre um amigo, jogue junte, compartilhe uma sessão ou encontre seu par romântico.',
-          img: '/screens/em-breve/esc-friends.png'
+          img: '/expo/screens/em-breve/esc-friends.png'
         },
         {
           name: 'ESC TRADE',
           icon: markRaw(TradeIcon),
           text: 'Troque, negocie, renove! Explore o mercado de trocas e encontre novos lares para seus itens favoritos.',
-          img: '/screens/em-breve/esc-trade.png'
+          img: '/expo/screens/em-breve/esc-trade.png'
         },
         {
           name: 'ESC JOBS',
           icon: markRaw(JobsIcon),
           text: 'Descubra oportunidades. Encontre freelas e empregos sob medida para você.',
-          img: '/screens/em-breve/esc-jobs.png'
+          img: '/expo/screens/em-breve/esc-jobs.png'
         },
         {
           name: 'GAMEFICAÇÃO',
           icon: markRaw(GameficationIcon),
           text: 'Explore desafios, personalize seu perfil, conquiste troféus e exiba títulos exclusivos em seu perfil.',
-          img: '/screens/em-breve/gameficacao.png'
+          img: '/expo/screens/em-breve/gameficacao.png'
         },
         {
           name: 'INSIGHTS',
           icon: markRaw(InsightsIcon),
           text: 'Explore insights exclusivos sobre sua atividade e relacionamentos na plataforma.',
-          img: '/screens/em-breve/insights.png'
+          img: '/expo/screens/em-breve/insights.png'
         }
       ]
     }
@@ -90,7 +90,7 @@ export default {
     activeImage() {
       return this.activeIndex !== null
         ? this.items[this.activeIndex]
-        : { name: '', text: '', img: '/screens/em-breve/loja.png' }
+        : { name: '', text: '', img: '/expo/screens/em-breve/loja.png' }
     },
     chunkedItems() {
       const chunkSize = 3

@@ -15,11 +15,35 @@ export default {
     setTimeout(() => {
       this.isLoading = false
     }, 1000)
+  },
+  watch: {
+    isLoading(newVal) {
+      if (newVal) {
+        document.body.classList.add('loading')
+      } else {
+        document.body.classList.remove('loading')
+      }
+    }
   }
 }
 </script>
 
 <template>
-  <LoadingSpinner :isLoading="isLoading" />
-  <RouterView />
+  <div :class="{ loading: isLoading }">
+    <LoadingSpinner :isLoading="isLoading" />
+    <RouterView />
+  </div>
 </template>
+
+<style>
+body.loading {
+  background-color: #12111f;
+}
+
+body {
+  background:
+    url('/bg.png') no-repeat,
+    url('/circle-green.png') no-repeat #12111f;
+  background-size: 100%;
+}
+</style>

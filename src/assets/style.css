@@ -8,10 +8,3 @@
     font-family: 'Poppins', sans-serif;
   }
 }
-
-body {
-  background:
-    url('/bg.png') no-repeat,
-    url('/circle-green.png') no-repeat #12111f;
-  background-size: 100%;
-}
