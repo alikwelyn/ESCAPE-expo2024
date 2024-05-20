@@ -166,7 +166,7 @@ export default {
           categories: ['Diariamente', 'Semanalmente', 'Uma vez por mês', 'Esporadicamente'],
           labels: {
             style: {
-              colors: ['#FFFFFF'],
+              colors: ['#ffffff'],
               fontSize: '12px',
               fontFamily: 'Poppins'
             }
@@ -195,7 +195,39 @@ export default {
         grid: {
           borderColor: '#404040',
           strokeDashArray: 4
-        }
+        },
+        responsive: [
+          {
+            breakpoint: 1025,
+            options: {
+              plotOptions: {
+                bar: {
+                  horizontal: false,
+                  dataLabels: {
+                    position: 'top'
+                  }
+                }
+              },
+              dataLabels: {
+                offsetX: 0,
+                offsetY: -20,
+                textAnchor: 'middle',
+                style: {
+                  fontSize: '12px',
+                  colors: ['#fff']
+                }
+              },
+              xaxis: {
+                labels: {
+                  style: {
+                    colors: ['#fff', '#fff', '#fff', '#fff'],
+                    fontSize: '16px'
+                  }
+                }
+              }
+            }
+          }
+        ]
       },
       entireMarket: [
         {
@@ -271,7 +303,39 @@ export default {
         grid: {
           borderColor: '#404040',
           strokeDashArray: 4
-        }
+        },
+        responsive: [
+          {
+            breakpoint: 1000,
+            options: {
+              plotOptions: {
+                bar: {
+                  horizontal: false,
+                  dataLabels: {
+                    position: 'top'
+                  }
+                }
+              },
+              dataLabels: {
+                offsetX: 0,
+                offsetY: -20,
+                textAnchor: 'middle',
+                style: {
+                  fontSize: '12px',
+                  colors: ['#fff']
+                }
+              },
+              xaxis: {
+                labels: {
+                  style: {
+                    colors: ['#fff', '#fff', '#fff', '#fff'],
+                    fontSize: '16px'
+                  }
+                }
+              }
+            }
+          }
+        ]
       }
     }
   }
