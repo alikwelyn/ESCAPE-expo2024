@@ -208,7 +208,7 @@ export default {
         }"
       >
         <swiper-slide v-for="(item, index) in items" :key="index">
-          <card class="relative w-full">
+          <div class="relative w-full">
             <img :src="item.img" class="object-cover w-full h-full rounded-[20px]" />
             <div
               class="absolute w-full h-full bottom-0 bg-gradient-to-t from-slate-950 from-2% via-transparent via-50% to-transparent to-10% flex flex-col items-start justify-end text-left p-3 border-[3px] border-[#C3D600] rounded-[20px] pb-[20px]"
@@ -218,7 +218,7 @@ export default {
                 {{ item.text }}
               </p>
             </div>
-          </card>
+          </div>
         </swiper-slide>
       </swiper>
     </div>

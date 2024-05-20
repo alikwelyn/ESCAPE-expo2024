@@ -3,6 +3,14 @@ import FutureUpdatesIcon from '../atoms/FutureUpdatesIcon.vue'
 import TitleSection from '../molecules/TitleSection.vue'
 import CartIcon from '../atoms/CartIcon.vue'
 import DesktopIcon from '../atoms/DesktopIcon.vue'
+import MoneyIcon from '../atoms/MoneyIcon.vue'
+import EyeIcon from '../atoms/EyeIcon.vue'
+import UsersIcon from '../atoms/UsersIcon.vue'
+import TradeIcon from '../atoms/TradeIcon.vue'
+import JobsIcon from '../atoms/JobsIcon.vue'
+import GameficationIcon from '../atoms/GameficationIcon.vue'
+import InsightsIcon from '../atoms/InsightsIcon.vue'
+
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination, Keyboard } from 'swiper/modules'
 import 'swiper/css'
@@ -18,17 +26,82 @@ export default {
   },
   data() {
     return {
-      activeIndex: null,
+      activeIndex: 0,
       items: [
-        { name: 'LOJA1', icon: <CartIcon />, img: '/esc-feed.png' },
-        { name: 'LOJA2', icon: DesktopIcon, img: '/esc-feed.png' },
-        { name: 'LOJA3', icon: 'path/to/icon3.svg', img: '/carvao.png' }
+        {
+          name: 'LOJA',
+          icon: CartIcon,
+          text: 'Venda produtos ou faça compras com facilidade, garantindo segurança e proteção em todas as transações.',
+          img: '/screens/em-breve/loja.png'
+        },
+        {
+          name: 'ESC DESKTOP',
+          icon: DesktopIcon,
+          text: 'EM BREVE!!',
+          img: '/screens/em-breve/esc-desktop.png'
+        },
+        {
+          name: 'MOEDA PRÓPRIA',
+          icon: MoneyIcon,
+          text: 'Encontre, adquira, aproveite! Explore e compre com suas moedas dentro do aplicativo.',
+          img: '/screens/em-breve/moeda.png'
+        },
+        {
+          name: 'ESC LIVES',
+          icon: EyeIcon,
+          text: 'Transmita momentos, converse com seguidores e mergulhe na experiência de livestream.',
+          img: '/screens/em-breve/esc-lives.png'
+        },
+        {
+          name: 'ESC FRIENDS',
+          icon: UsersIcon,
+          text: 'Encontre um amigo, jogue junte, compartilhe uma sessão ou encontre seu par romântico.',
+          img: '/screens/em-breve/esc-friends.png'
+        },
+        {
+          name: 'ESC TRADE',
+          icon: TradeIcon,
+          text: 'Troque, negocie, renove! Explore o mercado de trocas e encontre novos lares para seus itens favoritos.',
+          img: '/screens/em-breve/esc-trade.png'
+        },
+        {
+          name: 'ESC JOBS',
+          icon: JobsIcon,
+          text: 'Descubra oportunidades. Encontre freelas e empregos sob medida para você.',
+          img: '/screens/em-breve/esc-jobs.png'
+        },
+        {
+          name: 'GAMEFICAÇÃO',
+          icon: GameficationIcon,
+          text: 'Explore desafios, personalize seu perfil, conquiste troféus e exiba títulos exclusivos em seu perfil.',
+          img: '/screens/em-breve/gameficacao.png'
+        },
+        {
+          name: 'INSIGHTS',
+          icon: InsightsIcon,
+          text: 'Explore insights exclusivos sobre sua atividade e relacionamentos na plataforma.',
+          img: '/screens/em-breve/insights.png'
+        }
       ]
     }
   },
   computed: {
     activeImage() {
-      return this.activeIndex !== null ? this.items[this.activeIndex].img : '/esc-feed.png'
+      console.log(this.activeIndex)
+      return this.activeIndex !== null
+        ? this.items[this.activeIndex]
+        : { name: '', text: '', img: '/screens/em-breve/loja.png' }
+    },
+    chunkedItems() {
+      const chunkSize = 3
+      return this.items.reduce((resultArray, item, index) => {
+        const chunkIndex = Math.floor(index / chunkSize)
+        if (!resultArray[chunkIndex]) {
+          resultArray[chunkIndex] = []
+        }
+        resultArray[chunkIndex].push(item)
+        return resultArray
+      }, [])
     }
   },
   methods: {
@@ -63,79 +136,38 @@ export default {
             </template>
           </TitleSection>
           <div
+            v-for="(chunk, chunkIndex) in chunkedItems"
+            :key="chunkIndex"
             class="sm:flex-col sm:space-y-0 sm:space-x-0 sm:mt-1 md:flex-col md:space-y-0 md:space-x-0 md:mt-1 flex flex-row w-full space-x-16 mt-[30px]"
           >
             <div
-              v-for="(item, index) in items"
+              v-for="(item, index) in chunk"
               :key="index"
-              @click="setActive(index)"
+              @click="setActive(index + chunkIndex * 3)"
               class="sm:pb-5 md:pb-5 w-full cursor-pointer"
             >
               <div
                 class="w-full h-1 rounded-tl-xl rounded-tr-xl"
-                :style="{ backgroundColor: activeIndex === index ? '#c3d600' : '#c3d600' }"
+                :style="{
+                  backgroundColor: activeIndex === index + chunkIndex * 3 ? '#c3d600' : '#c3d600'
+                }"
               ></div>
               <div
-                class="flex flex-col justify-center items-center p-[40px] rounded-bl-xl rounded-br-xl border-t-0 border-r border-b border-l border-white/10"
+                class="flex flex-col justify-center items-center h-[175px] rounded-bl-xl rounded-br-xl border-t-0 border-r border-b border-l border-white/10 text"
                 :style="{
-                  backgroundColor: activeIndex === index ? '#ffffff' : '#1b1724',
-                  color: activeIndex === index ? '#333333' : '#ffffff'
+                  backgroundColor: activeIndex === index + chunkIndex * 3 ? '#ffffff' : '#1b1724',
+                  color: activeIndex === index + chunkIndex * 3 ? '#333333' : '#ffffff'
                 }"
               >
-                <svg
-                  width="50"
-                  height="51"
-                  viewBox="0 0 50 51"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_84_10108)">
-                    <path
-                      d="M6.49998 26.947H35.7143L39.2857 9.08984H3.57141C3.31023 9.0908 3.05244 9.14904 2.81622 9.26045C2.58 9.37186 2.37109 9.53373 2.20422 9.73465C2.03735 9.93557 1.91659 10.1707 1.85045 10.4233C1.78431 10.676 1.77439 10.9401 1.82141 11.197L4.74998 25.4827C4.81829 25.8957 5.03242 26.2706 5.35351 26.5393C5.67459 26.8079 6.08135 26.9526 6.49998 26.947V26.947Z"
-                      stroke="#C3D600"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M39.2857 9.08963L40.7857 3.37535C40.868 2.972 41.0872 2.60949 41.4061 2.34917C41.725 2.08884 42.124 1.94669 42.5357 1.94678H48.2143"
-                      stroke="#C3D600"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M35.7142 26.9468L34.2142 34.4468C34.1319 34.8501 33.9127 35.2126 33.5938 35.473C33.2749 35.7333 32.8759 35.8754 32.4642 35.8753H10.7142"
-                      stroke="#C3D600"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M12.4999 48.3751C13.4862 48.3751 14.2857 47.5756 14.2857 46.5894C14.2857 45.6032 13.4862 44.8037 12.4999 44.8037C11.5137 44.8037 10.7142 45.6032 10.7142 46.5894C10.7142 47.5756 11.5137 48.3751 12.4999 48.3751Z"
-                      stroke="#C3D600"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M30.3571 48.3751C31.3433 48.3751 32.1428 47.5756 32.1428 46.5894C32.1428 45.6032 31.3433 44.8037 30.3571 44.8037C29.3709 44.8037 28.5714 45.6032 28.5714 46.5894C28.5714 47.5756 29.3709 48.3751 30.3571 48.3751Z"
-                      stroke="#C3D600"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_84_10108">
-                      <rect width="50" height="50" fill="white" transform="translate(0 0.161133)" />
-                    </clipPath>
-                  </defs>
-                </svg>
-
+                <template v-if="typeof item.icon === 'object'">
+                  <component :is="item.icon" />
+                </template>
+                <template v-else>
+                  <img :src="item.icon" />
+                </template>
                 <p
-                  class="text-[28px] font-semibold text-left"
-                  :style="{ color: activeIndex === index ? '#333333' : '#ffffff' }"
+                  class="text-[22px] font-semibold text-center leading-tight mt-2"
+                  :style="{ color: activeIndex === index + chunkIndex * 3 ? '#333333' : '#ffffff' }"
                 >
                   {{ item.name }}
                 </p>
@@ -144,7 +176,41 @@ export default {
           </div>
         </div>
       </div>
-      <img :src="activeImage" alt="Active image" />
+      <div class="relative w-[50%]">
+        <img :src="activeImage.img" class="object-cover w-full h-full rounded-[20px]" />
+        <div
+          v-if="activeImage !== null"
+          class="absolute w-full h-full bottom-0 bg-gradient-to-t from-slate-950 from-2% via-transparent via-50% to-transparent to-10% flex flex-col items-start justify-end text-left p-3 border-[3px] border-[#C3D600] rounded-[20px] pb-[20px]"
+        >
+          <h6 class="text-[24px] text-[#C3D600] font-bold text-left">{{ activeImage.name }}</h6>
+          <p class="text-[16px] text-white font-semibold">{{ activeImage.text }}</p>
+        </div>
+        <div
+          v-else
+          class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 rounded-[20px]"
+        >
+          <svg
+            class="animate-spin h-10 w-10 text-[#C3D600]"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              class="opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+              stroke-width="4"
+            ></circle>
+            <path
+              class="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A8.001 8.001 0 0112 4V0C6.486 0 2 4.486 2 10h4zM20 4a8 8 0 00-7.291 12H12c4.513 0 8-3.487 8-8h-4zM4 12h.001M20 12h.001"
+            ></path>
+          </svg>
+        </div>
+      </div>
     </div>
     <div
       class="sm:block sm:w-full sm:px-4 md:block md:w-full md:px-8 lg:block lg:w-full lg:px-10 xl:hidden 2xl:hidden 3xl:hidden w-4/6 flex justify-center items-center"
@@ -182,23 +248,18 @@ export default {
             }
           }"
         >
-          <swiper-slide>
-            <img src="/esc-feed.png" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src="/esc-feed.png" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src="/esc-feed.png" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src="/esc-feed.png" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src="/esc-feed.png" />
-          </swiper-slide>
-          <swiper-slide>
-            <img src="/esc-feed.png" />
+          <swiper-slide v-for="(item, index) in items" :key="index">
+            <div class="relative w-full">
+              <img :src="item.img" class="object-cover w-full h-full rounded-[20px]" />
+              <div
+                class="absolute w-full h-full bottom-0 bg-gradient-to-t from-slate-950 from-2% via-transparent via-50% to-transparent to-10% flex flex-col items-start justify-end text-left p-3 border-[3px] border-[#C3D600] rounded-[20px] pb-[20px]"
+              >
+                <h6 class="text-[24px] text-[#C3D600] font-bold text-left">
+                  {{ item.name }}
+                </h6>
+                <p class="text-[16px] text-white font-semibold">{{ item.text }}</p>
+              </div>
+            </div>
           </swiper-slide>
         </swiper>
       </div>
