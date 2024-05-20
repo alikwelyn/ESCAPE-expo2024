@@ -17,7 +17,13 @@ export default {
 </script>
 
 <template>
-  <div class="w-full flex-col justify-center items-center mt-14 text-center">
+  <div
+    class="w-full flex-col justify-center items-center mt-14 text-center"
+    data-aos="fade-up"
+    data-aos-delay="75"
+    data-aos-duration="500"
+    data-aos-easing="fade-down"
+  >
     <h2
       class="sm:text-[32px] sm:leading-tight sm:px-4 md:leading-tight md:px-8 lg:text-[36px] mb-2 block text-[52px] font-semibold leading-snug text-white antialiased"
     >

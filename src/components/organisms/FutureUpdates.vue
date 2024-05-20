@@ -11,7 +11,13 @@ export default {
 </script>
 
 <template>
-  <div class="w-full flex justify-center items-center mt-14">
+  <div
+    class="w-full flex justify-center items-center mt-14"
+    data-aos="fade-right"
+    data-aos-delay="75"
+    data-aos-duration="1000"
+    data-aos-easing="fade-left"
+  >
     <div
       class="sm:flex-col sm:w-full sm:px-4 md:flex-col md:w-full md:px-8 lg:w-full lg:px-10 xl:w-full xl:px-12 2xl:w-full 2xl:px-14 w-4/6 flex justify-center items-center"
     >

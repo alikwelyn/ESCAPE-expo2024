@@ -11,7 +11,13 @@ export default {
 </script>
 
 <template>
-  <div class="sm:mt-5 w-full flex justify-center items-center mt-14">
+  <div
+    class="sm:mt-5 w-full flex justify-center items-center mt-14"
+    data-aos="fade-up"
+    data-aos-delay="75"
+    data-aos-duration="500"
+    data-aos-easing="fade-down"
+  >
     <div
       class="sm:w-full sm:px-4 md:w-full md:px-8 lg:w-full lg:px-10 xl:w-full xl:px-12 2xl:w-full 2xl:px-14 w-4/6 flex-col"
     >
@@ -29,7 +35,13 @@ export default {
           <div
             class="sm:flex-col sm:px-5 md:flex-col md:px-5 lg:px-5 flex items-center justify-center bg-black bg-opacity-90 rounded-md py-[35px] px-[60px] gap-16 block z-10 bg-[url('/public/ellipse.png')] bg-bottom bg-cover bg-no-repeat"
           >
-            <div class="flex-col h-full w-full items-center justify-center">
+            <div
+              class="flex-col h-full w-full items-center justify-center"
+              data-aos="fade-right"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              data-aos-easing="fade-left"
+            >
               <h6 class="block text-[50px] font-semibold leading-snug text-white antialiased">
                 MISSÃO
               </h6>
@@ -39,7 +51,13 @@ export default {
                 cultura em um ambiente inclusivo e seguro.
               </p>
             </div>
-            <div class="flex-col h-full w-full items-center justify-center">
+            <div
+              class="flex-col h-full w-full items-center justify-center"
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+              data-aos-easing="fade-left"
+            >
               <h6 class="block text-[50px] font-semibold leading-snug text-white antialiased">
                 VISÃO
               </h6>
@@ -49,7 +67,13 @@ export default {
                 esses laços, impulsionando o crescimento e a inovação.
               </p>
             </div>
-            <div class="flex-col h-full w-full items-center justify-center">
+            <div
+              class="flex-col h-full w-full items-center justify-center"
+              data-aos="fade-right"
+              data-aos-delay="700"
+              data-aos-duration="1000"
+              data-aos-easing="fade-left"
+            >
               <h6 class="block text-[50px] font-semibold leading-snug text-white antialiased">
                 VALORES
               </h6>

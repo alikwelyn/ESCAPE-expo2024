@@ -1,7 +1,13 @@
 <script></script>
 
 <template>
-  <div class="w-full flex-col justify-center items-center mt-14">
+  <div
+    class="w-full flex-col justify-center items-center mt-14"
+    data-aos="fade-up"
+    data-aos-delay="75"
+    data-aos-duration="500"
+    data-aos-easing="fade-down"
+  >
     <div class="flex flex-col justify-center items-center">
       <p
         class="sm:text-[30px] lg:text-[36px] text-[40px] font-bold text-left bg-gradient-to-tr from-[#fff] to-[#71717A] text-transparent bg-clip-text leading-tight text-center"
@@ -23,6 +29,10 @@
     >
       <div
         class="sm:h-[350px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
+        data-aos="fade-right"
+        data-aos-delay="150"
+        data-aos-duration="1000"
+        data-aos-easing="fade-left"
       >
         <div
           aria-hidden="true"
@@ -64,13 +74,11 @@
 
           <div class="mt-6">
             <h5
-              class="mb-2 block font-sans text-[24px] font-semibold leading-snug tracking-normal text-white antialiased"
+              class="mb-2 block text-[24px] font-semibold leading-snug tracking-normal text-white antialiased"
             >
               Fale da nossa rede social de narguile para seus clientes
             </h5>
-            <p
-              class="block font-sans text-[16px] font-regular leading-relaxed text-white antialiased"
-            >
+            <p class="block text-[16px] font-regular leading-relaxed text-white antialiased">
               Promova um espaço onde os amantes de narguile podem se conectar, compartilhar
               experiências e descobrir novidades exclusivas.
             </p>
@@ -79,6 +87,10 @@
       </div>
       <div
         class="sm:h-[350px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
+        data-aos="fade-right"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        data-aos-easing="fade-left"
       >
         <div
           aria-hidden="true"
@@ -120,13 +132,11 @@
 
           <div class="mt-6">
             <h5
-              class="mb-2 block font-sans text-[24px] font-semibold leading-snug tracking-normal text-white antialiased"
+              class="mb-2 block text-[24px] font-semibold leading-snug tracking-normal text-white antialiased"
             >
               Nos deem ideias
             </h5>
-            <p
-              class="block font-sans text-[16px] font-regular leading-relaxed text-white antialiased"
-            >
+            <p class="block text-[16px] font-regular leading-relaxed text-white antialiased">
               Envie sugestões e ideias para melhorarmos ainda mais. Juntos, podemos criar soluções
               incríveis.
             </p>
@@ -139,6 +149,10 @@
     >
       <div
         class="sm:h-[350px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
+        data-aos="fade-right"
+        data-aos-delay="450"
+        data-aos-duration="1000"
+        data-aos-easing="fade-left"
       >
         <div
           aria-hidden="true"
@@ -200,13 +214,11 @@
 
           <div class="mt-6">
             <h5
-              class="mb-2 block font-sans text-[24px] font-semibold leading-snug tracking-normal text-white antialiased"
+              class="mb-2 block text-[24px] font-semibold leading-snug tracking-normal text-white antialiased"
             >
               Entre no nosso grupo de lojistas
             </h5>
-            <p
-              class="block font-sans text-[16px] font-regular leading-relaxed text-white antialiased"
-            >
+            <p class="block text-[16px] font-regular leading-relaxed text-white antialiased">
               Junte-se ao grupo de lojistas da ESC e obtenha informações exclusivas e fique por
               dentro do lançamento do nosso APP.
             </p>
@@ -215,6 +227,10 @@
       </div>
       <div
         class="sm:h-[350px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
+        data-aos="fade-right"
+        data-aos-delay="600"
+        data-aos-duration="1000"
+        data-aos-easing="fade-left"
       >
         <div
           aria-hidden="true"
@@ -247,13 +263,11 @@
 
           <div class="mt-6">
             <h5
-              class="mb-2 block font-sans text-[24px] font-semibold leading-snug tracking-normal text-white antialiased"
+              class="mb-2 block text-[24px] font-semibold leading-snug tracking-normal text-white antialiased"
             >
               Não perca as esperanças, nosso mercado ainda só está começando
             </h5>
-            <p
-              class="block font-sans text-[16px] font-regular leading-relaxed text-white antialiased"
-            >
+            <p class="block text-[16px] font-regular leading-relaxed text-white antialiased">
               Estamos apenas no início de uma jornada emocionante. Acredite no potencial da nossa
               rede social e cresça junto com a comunidade do narguile!
             </p>

@@ -15,7 +15,13 @@ export default {
 </script>
 
 <template>
-  <div class="w-full flex justify-center items-center mt-14">
+  <div
+    class="w-full flex justify-center items-center mt-14"
+    data-aos="fade-up"
+    data-aos-delay="75"
+    data-aos-duration="500"
+    data-aos-easing="fade-down"
+  >
     <div
       class="sm:w-full sm:px-4 md:w-full md:px-8 lg:w-full lg:px-10 xl:w-full xl:px-12 2xl:w-full 2xl:px-14 w-4/6 flex-col"
     >
@@ -26,7 +32,13 @@ export default {
       </TitleSection>
     </div>
   </div>
-  <div class="sm:px-4 md:px-8 lg:px-10 xl:px-12 2xl:px-14 w-full flex justify-center items-center">
+  <div
+    class="sm:px-4 md:px-8 lg:px-10 xl:px-12 2xl:px-14 w-full flex justify-center items-center"
+    data-aos="fade-up"
+    data-aos-delay="300"
+    data-aos-duration="500"
+    data-aos-easing="fade-down"
+  >
     <div class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex-col mb-4">
       <p
         class="sm:text-[16px] mb-2 block text-[20px] font-regular leading-snug text-white antialiased"
@@ -45,7 +57,13 @@ export default {
   </div>
   <div class="sm:px-4 md:px-8 lg:px-10 xl:px-12 2xl:px-14 w-full flex justify-center items-center">
     <div class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex gap-5">
-      <div class="relative flex w-full rounded-xl bg-[#252141] bg-opacity-50">
+      <div
+        class="relative flex w-full rounded-xl bg-[#252141] bg-opacity-50"
+        data-aos="fade-right"
+        data-aos-delay="150"
+        data-aos-duration="1000"
+        data-aos-easing="fade-left"
+      >
         <div class="p-[24px]">
           <h5
             class="sm:text-[16px] mb-2 block text-[20px] font-regular leading-snug text-white antialiased"
@@ -59,7 +77,13 @@ export default {
           </div>
         </div>
       </div>
-      <div class="relative flex w-full rounded-xl bg-[#252141] bg-opacity-50">
+      <div
+        class="relative flex w-full rounded-xl bg-[#252141] bg-opacity-50"
+        data-aos="fade-right"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        data-aos-easing="fade-left"
+      >
         <div class="p-[24px]">
           <h5
             class="sm:text-[16px] mb-2 block text-[20px] font-regular leading-snug text-white antialiased"
@@ -75,7 +99,13 @@ export default {
       </div>
     </div>
   </div>
-  <div class="sm:px-4 md:px-8 lg:px-10 xl:px-12 2xl:px-14 w-full flex justify-center items-center">
+  <div
+    class="sm:px-4 md:px-8 lg:px-10 xl:px-12 2xl:px-14 w-full flex justify-center items-center"
+    data-aos="fade-down"
+    data-aos-delay="100"
+    data-aos-duration="1000"
+    data-aos-easing="fade-up"
+  >
     <div class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex-col mt-4">
       <p
         class="sm:text-[16px] mb-2 block text-[20px] font-regular leading-snug text-white antialiased"

@@ -1,82 +1,275 @@
+<script>
+import { onMounted, onUnmounted } from 'vue'
+import { gsap } from 'gsap'
+
+export default {
+  name: 'HeroComponent',
+  setup() {
+    const handleMouseMove = (e) => {
+      const mouseX = e.clientX
+      const mouseY = e.clientY
+
+      gsap.to('.engagement-card, .notification-card, .follow-card, .visits-card', {
+        x: (mouseX / window.innerWidth - 1) * 30,
+        y: (mouseY / window.innerHeight - 1) * 30,
+        delay: 0.1,
+        ease: 'power2.out',
+        overwrite: 'auto'
+      })
+    }
+
+    onMounted(() => {
+      document.addEventListener('mousemove', handleMouseMove)
+
+      // Timeline
+      const timeline = gsap.timeline()
+
+      // Animate the texts
+      timeline.fromTo(
+        '.text-header span',
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, duration: 1, stagger: 0.1, ease: 'power2.out' }
+      )
+
+      // Animate the images
+      timeline.fromTo(
+        '.text-header .inline-block span',
+        { scale: 0, opacity: 0 },
+        { scale: 1, opacity: 1, duration: 1, stagger: 0.1, ease: 'back.out(1.7)' },
+        '-=2'
+      )
+    })
+
+    onUnmounted(() => {
+      document.removeEventListener('mousemove', handleMouseMove)
+    })
+
+    return {}
+  }
+}
+</script>
+
 <template>
   <div class="mt-12 mx-auto">
-    <span
-      class="inline-block absolute z-0 sm:hidden md:hidden lg:hidden xl:block xl:-top-7 xl:left-10 2xl:block 2xl:top-5 2xl:left-10 3xl:block 3xl:top-130 3xl:left-16 w-32 mt-20 text-red-900"
-    >
-      <div class="flex-grow-0 flex-shrink-0 w-[330px] h-[116px] rounded-[20px] bg-[#252141]">
-        <div class="w-[329px] h-[116px] absolute left-px top-0 overflow-hidden">
-          <svg
-            width="309"
-            height="63"
-            viewBox="0 0 309 63"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="absolute left-2.5 top-[38px]"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M2 61C4.32346 58.9538 8.85421 55.4069 15.3599 56.2254C23.492 57.2486 28.1389 61 32.7859 56.2254C37.4328 51.4509 40.918 47.3584 44.984 48.0405C49.0501 48.7225 51.9544 52.474 57.1822 51.7919C62.41 51.1098 47.8445 58.7369 71.123 48.0405C94.4014 37.3441 91.867 38.9745 93.1959 42.5838C94.8338 47.0326 99.5854 53.4971 109.46 49.4046C119.335 45.3121 119.567 40.8786 126.305 40.8786C133.043 40.8786 129.209 39.1734 131.533 40.8786C133.856 42.5838 135.018 41.9017 137.922 39.8555C140.827 37.8092 144.992 31.6705 148.477 34.3988C151.962 37.1272 154.768 42.5838 161.738 42.5838C168.708 42.5838 179.954 37.1272 187.506 33.0347C195.057 28.9422 199.494 36.7861 201.237 38.8324C202.979 40.8786 215.758 36.7861 222.729 31.6705C228.305 27.578 233.959 33.6031 236.089 37.1272C243.64 35.6493 260.253 31.8069 266.294 28.2601C272.335 24.7133 275.781 27.9191 276.749 29.9653C282.171 27.578 304.096 10.8671 307 2"
-              stroke="url(#paint0_linear_161_19)"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-            <defs>
-              <linearGradient
-                id="paint0_linear_161_19"
-                x1="307"
-                y1="0.635821"
-                x2="19.4084"
-                y2="117.088"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="white"></stop>
-                <stop offset="0.0782926" stop-color="#F9F2FF"></stop>
-                <stop offset="0.205255" stop-color="#C3D600"></stop>
-                <stop offset="0.401455" stop-color="#C3D600"></stop>
-                <stop offset="0.581288" stop-color="#848F09"></stop>
-                <stop offset="0.729526" stop-color="#C3D600"></stop>
-                <stop offset="0.882474" stop-color="#FFE7E7"></stop>
-                <stop offset="1" stop-color="white"></stop>
-              </linearGradient>
-            </defs>
-          </svg>
-          <p class="absolute left-[245px] top-[15px] text-2xl font-bold text-left text-white">
-            76%
-          </p>
-          <div class="flex flex-col justify-start items-start absolute left-[26px] top-[11px]">
-            <p class="flex-grow-0 flex-shrink-0 text-[13px] text-left text-white">25/05/2024</p>
-            <p class="flex-grow-0 flex-shrink-0 text-[14px] font-bold text-left text-white">
-              Engajamento da sua conta
+    <div class="engagement-card">
+      <span
+        class="inline-block absolute z-0 sm:hidden md:hidden lg:hidden xl:block xl:-top-[180px] xl:left-10 2xl:block 2xl:top-[-150px] 2xl:left-[50px] 3xl:block 3xl:top-130 3xl:left-16 w-32 mt-20 text-red-900"
+      >
+        <div class="flex-grow-0 flex-shrink-0 w-[330px] h-[116px] rounded-[20px] bg-[#252141]">
+          <div class="w-[329px] h-[116px] absolute left-px top-0 overflow-hidden">
+            <svg
+              width="309"
+              height="63"
+              viewBox="0 0 309 63"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute left-2.5 top-[38px]"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M2 61C4.32346 58.9538 8.85421 55.4069 15.3599 56.2254C23.492 57.2486 28.1389 61 32.7859 56.2254C37.4328 51.4509 40.918 47.3584 44.984 48.0405C49.0501 48.7225 51.9544 52.474 57.1822 51.7919C62.41 51.1098 47.8445 58.7369 71.123 48.0405C94.4014 37.3441 91.867 38.9745 93.1959 42.5838C94.8338 47.0326 99.5854 53.4971 109.46 49.4046C119.335 45.3121 119.567 40.8786 126.305 40.8786C133.043 40.8786 129.209 39.1734 131.533 40.8786C133.856 42.5838 135.018 41.9017 137.922 39.8555C140.827 37.8092 144.992 31.6705 148.477 34.3988C151.962 37.1272 154.768 42.5838 161.738 42.5838C168.708 42.5838 179.954 37.1272 187.506 33.0347C195.057 28.9422 199.494 36.7861 201.237 38.8324C202.979 40.8786 215.758 36.7861 222.729 31.6705C228.305 27.578 233.959 33.6031 236.089 37.1272C243.64 35.6493 260.253 31.8069 266.294 28.2601C272.335 24.7133 275.781 27.9191 276.749 29.9653C282.171 27.578 304.096 10.8671 307 2"
+                stroke="url(#paint0_linear_161_19)"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <defs>
+                <linearGradient
+                  id="paint0_linear_161_19"
+                  x1="307"
+                  y1="0.635821"
+                  x2="19.4084"
+                  y2="117.088"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="white"></stop>
+                  <stop offset="0.0782926" stop-color="#F9F2FF"></stop>
+                  <stop offset="0.205255" stop-color="#C3D600"></stop>
+                  <stop offset="0.401455" stop-color="#C3D600"></stop>
+                  <stop offset="0.581288" stop-color="#848F09"></stop>
+                  <stop offset="0.729526" stop-color="#C3D600"></stop>
+                  <stop offset="0.882474" stop-color="#FFE7E7"></stop>
+                  <stop offset="1" stop-color="white"></stop>
+                </linearGradient>
+              </defs>
+            </svg>
+            <p class="absolute left-[245px] top-[15px] text-2xl font-bold text-left text-white">
+              76%
             </p>
+            <div class="flex flex-col justify-start items-start absolute left-[26px] top-[11px]">
+              <p class="flex-grow-0 flex-shrink-0 text-[13px] text-left text-white">25/05/2024</p>
+              <p class="flex-grow-0 flex-shrink-0 text-[14px] font-bold text-left text-white">
+                Engajamento da sua conta
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </span>
-    <span
-      class="inline-block absolute sm:hidden md:hidden lg:hidden xl:block xl:top-[340px] xl:left-[70px] 2xl:block 2xl:top-[340px] 2xl:left-[100px] 3xl:block 3xl:top-[340px] 3xl:left-[150px] z-0 w-32 mt-20 text-red-900"
-    >
-      <div
-        class="flex flex-col justify-center items-center flex-grow-0 flex-shrink-0 w-[330px] overflow-hidden py-4 rounded-[20px] bg-[#252141]"
+      </span>
+    </div>
+    <div class="notification-card">
+      <span
+        class="inline-block absolute sm:hidden md:hidden lg:hidden xl:block xl:top-[200px] xl:left-[70px] 2xl:block 2xl:top-[200px] 2xl:left-[100px] 3xl:block 3xl:top-[200px] 3xl:left-[150px] z-0 w-32 mt-20 text-red-900"
       >
         <div
-          class="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-3 px-4 border-t-0 border-r-0 border-b-0 border-l-[3px] border-[#c3d600]"
+          class="flex flex-col justify-center items-center flex-grow-0 flex-shrink-0 w-[330px] overflow-hidden py-4 rounded-[20px] bg-[#252141]"
         >
-          <div class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative">
-            <img
-              src="../../../public/narguilerosa.jpg"
-              class="flex-grow-0 flex-shrink-0 w-[50px] h-[50px] rounded-full border-[3px] border-white object-cover"
-            />
-          </div>
-          <div class="flex flex-col justify-start items-start flex-grow gap-[3px]">
-            <div
-              class="flex justify-between items-start self-stretch flex-grow-0 flex-shrink-0 relative"
-            >
+          <div
+            class="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-3 px-4 border-t-0 border-r-0 border-b-0 border-l-[3px] border-[#c3d600]"
+          >
+            <div class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative">
+              <img
+                src="/narguilerosa.jpg"
+                class="flex-grow-0 flex-shrink-0 w-[50px] h-[50px] rounded-full border-[3px] border-white object-cover"
+              />
+            </div>
+            <div class="flex flex-col justify-start items-start flex-grow gap-[3px]">
               <div
-                class="flex justify-start items-center flex-grow-0 flex-shrink-0 w-[219px] relative gap-[5px]"
+                class="flex justify-between items-start self-stretch flex-grow-0 flex-shrink-0 relative"
               >
-                <p class="flex-grow-0 flex-shrink-0 text-[15px] font-medium text-left text-white">
-                  Narguile Rosa
+                <div
+                  class="flex justify-start items-center flex-grow-0 flex-shrink-0 w-[219px] relative gap-[5px]"
+                >
+                  <p class="flex-grow-0 flex-shrink-0 text-[15px] font-medium text-left text-white">
+                    Narguile Rosa
+                  </p>
+                  <svg
+                    width="15"
+                    height="16"
+                    viewBox="0 0 15 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="flex-grow-0 flex-shrink-0 w-[15px] h-[15px] relative"
+                    preserveAspectRatio="none"
+                  >
+                    <path
+                      d="M5.23828 7.99982L6.74456 9.51232L9.76331 6.4873"
+                      stroke="#C549FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M2.65078 4.3748C2.65078 3.7123 3.19453 3.16855 3.85703 3.16855H4.93828C5.18828 3.16855 5.53828 3.0373 5.72578 2.88105L6.71331 2.0373C7.15081 1.66855 7.85706 1.66855 8.28206 2.0373L9.26956 2.88105C9.45706 3.0373 9.81331 3.16855 10.0633 3.16855H11.1258C11.7883 3.16855 12.3321 3.7123 12.3321 4.3748V5.4373C12.3321 5.6873 12.4633 6.0373 12.6196 6.2248L13.4633 7.21232C13.8321 7.64982 13.8321 8.35607 13.4633 8.78107L12.6196 9.76857C12.4633 9.95607 12.3321 10.3061 12.3321 10.5561V11.6186C12.3321 12.2811 11.7883 12.8248 11.1258 12.8248H10.0633C9.81331 12.8248 9.46331 12.9561 9.27581 13.1123L8.28831 13.9561C7.85081 14.3248 7.14456 14.3248 6.71956 13.9561L5.73203 13.1123C5.54453 12.9561 5.18828 12.8248 4.94453 12.8248H3.85703C3.19453 12.8248 2.65078 12.2811 2.65078 11.6186V10.5498C2.65078 10.3061 2.52578 9.94982 2.36953 9.76857L1.52578 8.77482C1.16328 8.34357 1.16328 7.64357 1.52578 7.21232L1.87578 6.79982"
+                      stroke="#C549FF"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+                <p
+                  class="flex-grow-0 flex-shrink-0 text-[10px] -ml-10 font-medium text-left text-[#4c487d]"
+                >
+                  Agora
+                </p>
+              </div>
+              <div
+                class="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-2.5"
+              >
+                <p class="flex-grow w-[203px] text-[13px] text-left text-white">
+                  Se liga nesse novo lançamento que a marca X está fazendo!
+                </p>
+                <div
+                  class="flex flex-col justify-center items-center flex-grow-0 flex-shrink-0 h-[22px] w-[22px] relative gap-2.5 p-2.5 rounded-[900px] bg-[#c3d600]"
+                >
+                  <p class="flex-grow-0 flex-shrink-0 text-xs font-medium text-left text-white">
+                    2
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+    <div class="w-full mx-auto text-center text-header">
+      <h1
+        class="w-full text-center text-white font-bold sm:text-[40px] sm:leading-[40px] sm:px-[10px] md:text-[44px] lg:text-[62px] xl:text-[62px] 2xl:text-[62px] 3xl:text-[62px] leading-[72px]"
+      >
+        <span class="sm:text-[28px]">A primeira e única</span> <br />
+        <span class="inline-block relative">
+          <svg
+            width="343"
+            height="12"
+            viewBox="0 0 343 12"
+            class="absolute top-2/3 left-0 h-[0.7em] w-full"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.00013 5.89091C56.6278 5.08954 195.325 4.16334 337.092 6.86946"
+              stroke="#C3D600"
+              stroke-width="10"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <span class="relative sm:text-[40px]">rede social</span></span
+        >
+        <div class="inline-block px-3 sm:pt-[25px] sm:pb-[10px]">
+          <span
+            class="rounded-full border-[3px] border-white inline-block bg-contain bg-no-repeat align-middle mx-[0] -my-[0.5em] w-[55px] h-[55px] bg-[url(/narguilerosa.jpg)] translate-x-0 -translate-y-[5px]"
+          ></span>
+          <span
+            class="-ml-4 rounded-full border-[3px] border-white inline-block bg-contain bg-no-repeat align-middle mx-[0] -my-[0.5em] w-[55px] h-[55px] bg-[url(/juba.jpg)] translate-x-0 -translate-y-[5px]"
+          ></span>
+          <span
+            class="-ml-4 rounded-full border-[3px] border-white inline-block bg-contain bg-no-repeat align-middle mx-[0] -my-[0.5em] w-[55px] h-[55px] bg-[url(/rucoelho.jpg)] translate-x-0 -translate-y-[5px]"
+          ></span>
+          <span
+            class="-ml-4 rounded-full border-[3px] border-white inline-block bg-contain bg-no-repeat align-middle mx-[0] -my-[0.5em] w-[55px] h-[55px] bg-[url(/macario.jpg)] translate-x-0 -translate-y-[5px]"
+          ></span>
+        </div>
+        <span class="inline-block relative">
+          <svg
+            width="343"
+            height="12"
+            viewBox="0 0 343 12"
+            class="absolute top-2/3 left-0 h-[0.7em] w-full"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.00013 5.89091C56.6278 5.08954 195.325 4.16334 337.092 6.86946"
+              stroke="#C3D600"
+              stroke-width="10"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <span class="relative sm:text-[40px]">narguileira</span></span
+        ><br />
+        <span
+          class="sm:hidden mr-5 rounded-full inline-block align-middle mx-[0] w-[209px] h-[45px] bg-[url(/rosh.png)]"
+        ></span
+        ><span class="sm:text-[28px]">do mundo</span>
+        <span
+          class="sm:hidden ml-3 rounded-full inline-block align-middle mx-[0] w-[159px] h-[45px] bg-[url(/emojis.png)]"
+        ></span>
+      </h1>
+    </div>
+    <div class="follow-card">
+      <span
+        class="inline-block absolute sm:hidden md:hidden lg:hidden xl:block xl:-top-[420px] xl:right-[270px] 2xl:block 2xl:top-[-400px] 2xl:right-[270px] 3xl:block 3xl:-top-[340px] 3xl:right-[270px] z-0 hidden w-32 mt-20 text-red-900"
+      >
+        <div
+          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 w-[350px] overflow-hidden p-6 rounded-[20px] bg-[#252141]"
+        >
+          <div
+            class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 overflow-hidden"
+          >
+            <div class="flex justify-start items-center flex-grow relative overflow-hidden gap-2.5">
+              <div class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative">
+                <img
+                  src="/macario.jpg"
+                  class="flex-grow-0 flex-shrink-0 w-[50px] h-[50px] rounded-full border-[3px] border-white object-cover"
+                />
+              </div>
+              <div
+                class="flex justify-start items-center flex-grow-0 flex-shrink-0 w-[172px] absolute left-[61px] top-[5px] overflow-hidden gap-[3px]"
+              >
+                <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white">
+                  Eduardo Macário
                 </p>
                 <svg
                   width="15"
@@ -103,178 +296,46 @@
                   ></path>
                 </svg>
               </div>
-              <p
-                class="flex-grow-0 flex-shrink-0 text-[10px] -ml-10 font-medium text-left text-[#4c487d]"
-              >
-                Agora
+              <p class="flex-grow-0 flex-shrink-0 w-[116.5px] pt-5 text-sm text-left text-white">
+                Influencer
               </p>
             </div>
             <div
-              class="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-2.5"
+              class="flex justify-center items-center flex-grow-0 flex-shrink-0 h-[35px] overflow-hidden rounded-[10px]"
             >
-              <p class="flex-grow w-[203px] text-[13px] text-left text-white">
-                Se liga nesse novo lançamento que a marca X está fazendo!
-              </p>
               <div
-                class="flex flex-col justify-center items-center flex-grow-0 flex-shrink-0 h-[22px] w-[22px] relative gap-2.5 p-2.5 rounded-[900px] bg-[#c3d600]"
+                class="flex justify-center items-center flex-grow-0 flex-shrink-0 h-[25px] relative px-4 py-[9px] rounded bg-[#c3d600]"
               >
-                <p class="flex-grow-0 flex-shrink-0 text-xs font-medium text-left text-white">2</p>
+                <p class="flex-grow-0 flex-shrink-0 text-[11px] font-bold text-center text-white">
+                  Seguir
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </span>
-    <div class="w-full mx-auto text-center">
-      <h1
-        class="w-full text-center text-white font-bold sm:text-[40px] sm:leading-[40px] sm:px-[10px] md:text-[44px] lg:text-[62px] xl:text-[62px] 2xl:text-[62px] 3xl:text-[62px] leading-[72px]"
-      >
-        <span class="sm:text-[28px]">A primeira e única</span> <br />
-        <span class="inline-block relative">
-          <svg
-            width="343"
-            height="12"
-            viewBox="0 0 343 12"
-            class="absolute top-2/3 left-0 h-[0.7em] w-full"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.00013 5.89091C56.6278 5.08954 195.325 4.16334 337.092 6.86946"
-              stroke="#C3D600"
-              stroke-width="10"
-              stroke-linecap="round"
-            />
-          </svg>
-
-          <span class="relative sm:text-[40px]">rede social</span></span
-        >
-        <div class="inline-block px-3 sm:pt-[25px] sm:pb-[10px]">
-          <span
-            class="rounded-full border-[3px] border-white inline-block bg-contain bg-no-repeat align-middle mx-[0] -my-[0.5em] w-[55px] h-[55px] bg-[url(../../../public/narguilerosa.jpg)] translate-x-0 -translate-y-[5px]"
-          ></span>
-          <span
-            class="-ml-4 rounded-full border-[3px] border-white inline-block bg-contain bg-no-repeat align-middle mx-[0] -my-[0.5em] w-[55px] h-[55px] bg-[url(../../../public/juba.jpg)] translate-x-0 -translate-y-[5px]"
-          ></span>
-          <span
-            class="-ml-4 rounded-full border-[3px] border-white inline-block bg-contain bg-no-repeat align-middle mx-[0] -my-[0.5em] w-[55px] h-[55px] bg-[url(../../../public/rucoelho.jpg)] translate-x-0 -translate-y-[5px]"
-          ></span>
-          <span
-            class="-ml-4 rounded-full border-[3px] border-white inline-block bg-contain bg-no-repeat align-middle mx-[0] -my-[0.5em] w-[55px] h-[55px] bg-[url(../../../public/macario.jpg)] translate-x-0 -translate-y-[5px]"
-          ></span>
-        </div>
-        <span class="inline-block relative">
-          <svg
-            width="343"
-            height="12"
-            viewBox="0 0 343 12"
-            class="absolute top-2/3 left-0 h-[0.7em] w-full"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M5.00013 5.89091C56.6278 5.08954 195.325 4.16334 337.092 6.86946"
-              stroke="#C3D600"
-              stroke-width="10"
-              stroke-linecap="round"
-            />
-          </svg>
-
-          <span class="relative sm:text-[40px]">narguileira</span></span
-        ><br />
-        <span
-          class="sm:hidden mr-5 rounded-full inline-block align-middle mx-[0] w-[209px] h-[45px] bg-[url(../../../public/rosh.png)]"
-        ></span
-        ><span class="sm:text-[28px]">do mundo</span>
-        <span
-          class="sm:hidden ml-3 rounded-full inline-block align-middle mx-[0] w-[159px] h-[45px] bg-[url(../../../public/emojis.png)]"
-        ></span>
-      </h1>
+      </span>
     </div>
-    <span
-      class="inline-block absolute sm:hidden md:hidden lg:hidden xl:block xl:-top-[20px] xl:right-[270px] 2xl:block 2xl:top-[0px] 2xl:right-[270px] 3xl:block 3xl:top-[80px] 3xl:right-[270px] z-0 hidden w-32 mt-20 text-red-900"
-    >
-      <div
-        class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 w-[350px] overflow-hidden p-6 rounded-[20px] bg-[#252141]"
+    <div class="visits-card">
+      <span
+        class="inline-block absolute sm:hidden md:hidden lg:hidden xl:block xl:top-[-70px] xl:right-[130px] 2xl:block 2xl:top-[-50px] 2xl:right-[130px] 3xl:block 3xl:top-[-120px] 3xl:right-[330px] z-0 hidden w-32 mt-20 text-red-900"
       >
         <div
-          class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 overflow-hidden"
+          class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative gap-2 p-4 rounded-2xl bg-[#252141]"
         >
-          <div class="flex justify-start items-center flex-grow relative overflow-hidden gap-2.5">
-            <div class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative">
-              <img
-                src="../../../public/macario.jpg"
-                class="flex-grow-0 flex-shrink-0 w-[50px] h-[50px] rounded-full border-[3px] border-white object-cover"
-              />
-            </div>
-            <div
-              class="flex justify-start items-center flex-grow-0 flex-shrink-0 w-[172px] absolute left-[61px] top-[5px] overflow-hidden gap-[3px]"
-            >
-              <p class="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white">
-                Eduardo Macário
-              </p>
-              <svg
-                width="15"
-                height="16"
-                viewBox="0 0 15 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="flex-grow-0 flex-shrink-0 w-[15px] h-[15px] relative"
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M5.23828 7.99982L6.74456 9.51232L9.76331 6.4873"
-                  stroke="#C549FF"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M2.65078 4.3748C2.65078 3.7123 3.19453 3.16855 3.85703 3.16855H4.93828C5.18828 3.16855 5.53828 3.0373 5.72578 2.88105L6.71331 2.0373C7.15081 1.66855 7.85706 1.66855 8.28206 2.0373L9.26956 2.88105C9.45706 3.0373 9.81331 3.16855 10.0633 3.16855H11.1258C11.7883 3.16855 12.3321 3.7123 12.3321 4.3748V5.4373C12.3321 5.6873 12.4633 6.0373 12.6196 6.2248L13.4633 7.21232C13.8321 7.64982 13.8321 8.35607 13.4633 8.78107L12.6196 9.76857C12.4633 9.95607 12.3321 10.3061 12.3321 10.5561V11.6186C12.3321 12.2811 11.7883 12.8248 11.1258 12.8248H10.0633C9.81331 12.8248 9.46331 12.9561 9.27581 13.1123L8.28831 13.9561C7.85081 14.3248 7.14456 14.3248 6.71956 13.9561L5.73203 13.1123C5.54453 12.9561 5.18828 12.8248 4.94453 12.8248H3.85703C3.19453 12.8248 2.65078 12.2811 2.65078 11.6186V10.5498C2.65078 10.3061 2.52578 9.94982 2.36953 9.76857L1.52578 8.77482C1.16328 8.34357 1.16328 7.64357 1.52578 7.21232L1.87578 6.79982"
-                  stroke="#C549FF"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </svg>
-            </div>
-            <p class="flex-grow-0 flex-shrink-0 w-[116.5px] pt-5 text-sm text-left text-white">
-              Influencer
-            </p>
+          <div class="flex justify-start items-end flex-grow-0 flex-shrink-0 relative gap-1.5">
+            <div class="flex-grow-0 flex-shrink-0 w-2 h-6 rounded-[100px] bg-[#c3d600]"></div>
+            <div class="flex-grow-0 flex-shrink-0 w-2 h-[22px] rounded-[100px] bg-[#12111f]"></div>
+            <div class="flex-grow-0 flex-shrink-0 w-2 h-[34px] rounded-[100px] bg-[#c3d600]"></div>
+            <div class="flex-grow-0 flex-shrink-0 w-2 h-4 rounded-[100px] bg-[#12111f]"></div>
+            <div class="flex-grow-0 flex-shrink-0 w-2 h-6 rounded-[100px] bg-[#c3d600]"></div>
+            <div class="flex-grow-0 flex-shrink-0 w-2 h-8 rounded-[100px] bg-[#12111f]"></div>
+            <div class="flex-grow-0 flex-shrink-0 w-2 h-6 rounded-[100px] bg-[#c3d600]"></div>
           </div>
-          <div
-            class="flex justify-center items-center flex-grow-0 flex-shrink-0 h-[35px] overflow-hidden rounded-[10px]"
-          >
-            <div
-              class="flex justify-center items-center flex-grow-0 flex-shrink-0 h-[25px] relative px-4 py-[9px] rounded bg-[#c3d600]"
-            >
-              <p class="flex-grow-0 flex-shrink-0 text-[11px] font-bold text-center text-white">
-                Seguir
-              </p>
-            </div>
-          </div>
+          <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-white">Visitas no perfil</p>
+          <p class="flex-grow-0 flex-shrink-0 text-2xl font-bold text-left text-white">14m+</p>
         </div>
-      </div>
-    </span>
-    <span
-      class="inline-block absolute sm:hidden md:hidden lg:hidden xl:block xl:top-[320px] xl:right-[130px] 2xl:block 2xl:top-[320px] 2xl:right-[130px] 3xl:block 3xl:top-[220px] 3xl:right-[330px] z-0 hidden w-32 mt-20 text-red-900"
-    >
-      <div
-        class="flex flex-col justify-center items-start flex-grow-0 flex-shrink-0 relative gap-2 p-4 rounded-2xl bg-[#252141]"
-      >
-        <div class="flex justify-start items-end flex-grow-0 flex-shrink-0 relative gap-1.5">
-          <div class="flex-grow-0 flex-shrink-0 w-2 h-6 rounded-[100px] bg-[#c3d600]"></div>
-          <div class="flex-grow-0 flex-shrink-0 w-2 h-[22px] rounded-[100px] bg-[#12111f]"></div>
-          <div class="flex-grow-0 flex-shrink-0 w-2 h-[34px] rounded-[100px] bg-[#c3d600]"></div>
-          <div class="flex-grow-0 flex-shrink-0 w-2 h-4 rounded-[100px] bg-[#12111f]"></div>
-          <div class="flex-grow-0 flex-shrink-0 w-2 h-6 rounded-[100px] bg-[#c3d600]"></div>
-          <div class="flex-grow-0 flex-shrink-0 w-2 h-8 rounded-[100px] bg-[#12111f]"></div>
-          <div class="flex-grow-0 flex-shrink-0 w-2 h-6 rounded-[100px] bg-[#c3d600]"></div>
-        </div>
-        <p class="flex-grow-0 flex-shrink-0 text-xs text-left text-white">Visitas no perfil</p>
-        <p class="flex-grow-0 flex-shrink-0 text-2xl font-bold text-left text-white">14m+</p>
-      </div>
-    </span>
+      </span>
+    </div>
     <div class="w-full mx-auto text-center w-10/12">
       <div
         class="sm:px-[10px] mt-[20px] flex justify-center items-start flex-grow-0 flex-shrink-0 relative overflow-hidden gap-2.5"
@@ -328,7 +389,7 @@
       </div>
     </div>
     <div class="w-full mt-20 flex justify-center items-center">
-      <img src="../../../public/mockup-telefone-app.png" />
+      <img src="/mockup-telefone-app.png" />
     </div>
   </div>
 </template>
