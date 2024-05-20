@@ -116,9 +116,12 @@ export default {
           <div
             class="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-3 px-4 border-t-0 border-r-0 border-b-0 border-l-[3px] border-[#c3d600]"
           >
-            <div class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative">
+            <div
+              class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative"
+              v-lazy-container="{ selector: 'img' }"
+            >
               <img
-                src="/narguilerosa.jpg"
+                data-src="/expo/narguilerosa.jpg"
                 class="flex-grow-0 flex-shrink-0 w-[50px] h-[50px] rounded-full border-[3px] border-white object-cover"
               />
             </div>
@@ -259,9 +262,12 @@ export default {
             class="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 overflow-hidden"
           >
             <div class="flex justify-start items-center flex-grow relative overflow-hidden gap-2.5">
-              <div class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative">
+              <div
+                class="flex justify-start items-center flex-grow-0 flex-shrink-0 relative"
+                v-lazy-container="{ selector: 'img' }"
+              >
                 <img
-                  src="/macario.jpg"
+                  data-src="/expo/macario.jpg"
                   class="flex-grow-0 flex-shrink-0 w-[50px] h-[50px] rounded-full border-[3px] border-white object-cover"
                 />
               </div>
@@ -388,10 +394,13 @@ export default {
         </button>
       </div>
     </div>
-    <div class="sm:mt-5 w-full mt-20 flex justify-center items-center">
-      <img src="/mockup-telefone-app.png" class="sm:hidden" />
+    <div
+      class="sm:mt-5 w-full mt-20 flex justify-center items-center"
+      v-lazy-container="{ selector: 'img' }"
+    >
+      <img data-src="/expo/mockup-telefone-app.png" class="sm:hidden" />
       <img
-        src="/mockup-telefone-app-desk.png"
+        data-src="/expo/mockup-telefone-app-desk.png"
         class="sm:block md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden"
       />
     </div>

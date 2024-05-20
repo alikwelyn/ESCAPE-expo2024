@@ -176,8 +176,8 @@ export default {
           </div>
         </div>
       </div>
-      <div class="relative w-[50%]">
-        <img :src="activeImage.img" class="object-cover w-full h-full rounded-[20px]" />
+      <div class="relative w-[50%]" v-lazy-container="{ selector: 'img' }">
+        <img :data-src="activeImage.img" class="object-cover w-full h-full rounded-[20px]" />
         <div
           v-if="activeImage !== null"
           class="absolute w-full h-full bottom-0 bg-gradient-to-t from-slate-950 from-2% via-transparent via-50% to-transparent to-10% flex flex-col items-start justify-end text-left p-3 border-[3px] border-[#C3D600] rounded-[20px] pb-[20px]"
@@ -249,8 +249,8 @@ export default {
           }"
         >
           <swiper-slide v-for="(item, index) in items" :key="index">
-            <div class="relative w-full">
-              <img :src="item.img" class="object-cover w-full h-full rounded-[20px]" />
+            <div class="relative w-full" v-lazy-container="{ selector: 'img' }">
+              <img :data-src="item.img" class="object-cover w-full h-full rounded-[20px]" />
               <div
                 class="absolute w-full h-full bottom-0 bg-gradient-to-t from-slate-950 from-2% via-transparent via-50% to-transparent to-10% flex flex-col items-start justify-end text-left p-3 border-[3px] border-[#C3D600] rounded-[20px] pb-[20px]"
               >

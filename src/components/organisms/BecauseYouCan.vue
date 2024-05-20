@@ -11,11 +11,12 @@ export default {
 <template>
   <div class="sm:mt-5 md:mt-5 w-full flex justify-center items-center mt-14">
     <div
+      v-lazy-container="{ selector: 'img' }"
       class="sm:w-full sm:px-4 md:w-full md:px-8 lg:w-full lg:px-10 xl:w-full xl:px-12 2xl:w-full 2xl:px-14 w-4/6 flex justify-center items-center gap-5"
     >
       <img
         class="sm:hidden md:hidden lg:w-[525px] lg:h-[507px] xl:w-[525px] xl:h-[507px] w-[598px] h-[577px] rounded-[20px]"
-        src="/carvao.png"
+        data-src="/expo/carvao.png"
         data-aos="fade-down"
         data-aos-delay="150"
         data-aos-duration="1000"

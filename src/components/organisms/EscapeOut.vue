@@ -92,8 +92,9 @@ export default {
               v-for="(image, index) in duplicatedImagesLine1"
               :key="index"
               class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3 blur-sm"
+              v-lazy-container="{ selector: 'img' }"
             >
-              <img class="object-cover rounded-full" :src="image" />
+              <img class="object-cover rounded-full" :data-src="image" />
             </div>
           </div>
           <div class="w-full flex-col space-y-3 animate-infinite-scroll-down">
@@ -101,8 +102,9 @@ export default {
               v-for="(image, index) in duplicatedImagesLine2"
               :key="index"
               class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3 blur-sm"
+              v-lazy-container="{ selector: 'img' }"
             >
-              <img class="object-cover rounded-full" :src="image" />
+              <img class="object-cover rounded-full" :data-src="image" />
             </div>
           </div>
           <div class="w-full flex-col space-y-3 animate-infinite-scroll-up">
@@ -110,8 +112,9 @@ export default {
               v-for="(image, index) in duplicatedImagesLine3"
               :key="index"
               class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3 blur-sm"
+              v-lazy-container="{ selector: 'img' }"
             >
-              <img class="object-cover rounded-full" :src="image" />
+              <img class="object-cover rounded-full" :data-src="image" />
             </div>
           </div>
           <div class="md:hidden w-full flex-col space-y-3 animate-infinite-scroll-down">
@@ -119,8 +122,9 @@ export default {
               v-for="(image, index) in duplicatedImagesLine4"
               :key="index"
               class="w-[100px] h-[100px] border-[5px] border-[#C3D600] rounded-full mb-3 blur-sm"
+              v-lazy-container="{ selector: 'img' }"
             >
-              <img class="object-cover rounded-full" :src="image" />
+              <img class="object-cover rounded-full" :data-src="image" />
             </div>
           </div>
         </div>
@@ -131,8 +135,9 @@ export default {
                 v-for="(image, index) in duplicatedImagesLine1"
                 :key="index"
                 class="border-[5px] border-[#C3D600] rounded-full blur-sm"
+                v-lazy-container="{ selector: 'img' }"
               >
-                <img class="object-cover rounded-full max-w-full max-h-full" :src="image" />
+                <img class="object-cover rounded-full max-w-full max-h-full" :data-src="image" />
               </li>
             </ul>
           </div>
@@ -142,8 +147,9 @@ export default {
                 v-for="(image, index) in duplicatedImagesLine2"
                 :key="index"
                 class="border-[5px] border-[#C3D600] rounded-full blur-sm"
+                v-lazy-container="{ selector: 'img' }"
               >
-                <img class="object-cover rounded-full max-w-full max-h-full" :src="image" />
+                <img class="object-cover rounded-full max-w-full max-h-full" :data-src="image" />
               </li>
             </ul>
           </div>
