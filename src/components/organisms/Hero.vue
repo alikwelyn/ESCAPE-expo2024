@@ -388,8 +388,12 @@ export default {
         </button>
       </div>
     </div>
-    <div class="w-full mt-20 flex justify-center items-center">
-      <img src="/mockup-telefone-app.png" />
+    <div class="sm:mt-5 w-full mt-20 flex justify-center items-center">
+      <img src="/mockup-telefone-app.png" class="sm:hidden" />
+      <img
+        src="/mockup-telefone-app-desk.png"
+        class="sm:block md:hidden lg:hidden xl:hidden 2xl:hidden 3xl:hidden"
+      />
     </div>
   </div>
 </template>
