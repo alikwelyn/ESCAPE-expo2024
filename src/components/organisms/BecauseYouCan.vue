@@ -16,7 +16,7 @@ export default {
     >
       <img
         class="sm:hidden md:hidden lg:w-[525px] lg:h-[507px] xl:w-[525px] xl:h-[507px] w-[598px] h-[577px] rounded-[20px]"
-        data-src="/expo/carvao.png"
+        data-src="/expo/voce-pode.png"
         data-aos="fade-down"
         data-aos-delay="150"
         data-aos-duration="1000"

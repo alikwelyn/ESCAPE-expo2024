@@ -427,8 +427,8 @@ export default {
           >
             Com base nessas informações entendemos que
             <span class="text-[#C3D600] font-semibold"
-              >150 mil consumidores de informação na rede social são suficientes para alcançar o
-              mercado inteiro</span
+              >150 mil consumidores ativos de informação na rede social são suficientes para
+              alcançar o mercado inteiro</span
             >.
           </h5>
           <apexchart

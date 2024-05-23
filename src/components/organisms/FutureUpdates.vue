@@ -56,7 +56,7 @@ export default {
         {
           name: 'ESC FRIENDS',
           icon: markRaw(UsersIcon),
-          text: 'Encontre um amigo, jogue junte, compartilhe uma sessão ou encontre seu par romântico.',
+          text: 'Encontre um amigo, jogue junto, compartilhe uma sessão ou encontre seu par romântico.',
           img: '/expo/screens/em-breve/esc-friends.png'
         },
         {

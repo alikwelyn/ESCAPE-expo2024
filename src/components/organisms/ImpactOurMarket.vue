@@ -88,9 +88,11 @@ export default {
           <h5
             class="sm:text-[16px] mb-2 block text-[20px] font-regular leading-snug text-white antialiased"
           >
-            A USP realizou um estudo sobre a
-            <span class="text-[#C3D600] font-semibold">frequência de consumo</span>
-            do consumidor conforme a tabela abaixo:
+            Porém, se as pessoas do nosso segmento
+            <span class="text-[#C3D600] font-semibold">perdem as contas</span>, consequentemente o
+            <span class="text-[#C3D600] font-semibold"
+              >alcance da informação diminui exponencialmente.</span
+            >
           </h5>
           <div class="py-5">
             <PeopleChainFalse />

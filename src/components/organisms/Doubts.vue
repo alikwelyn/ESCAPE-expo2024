@@ -10,14 +10,23 @@
   >
     <div class="flex flex-col justify-center items-center">
       <p
-        class="sm:text-[30px] lg:text-[36px] text-[40px] font-bold text-left bg-gradient-to-tr from-[#fff] to-[#71717A] text-transparent bg-clip-text leading-tight text-center"
+        class="sm:text-[22px] lg:text-[36px] text-[40px] font-bold text-left bg-gradient-to-tr from-[#fff] to-[#71717A] text-transparent bg-clip-text leading-tight text-center"
       >
-        A ESC É GRATUITA
+        A ESC É GRATUITA PARA TODOS
       </p>
       <p
-        class="sm:text-[36px] lg:text-[42px] text-[65px] font-bold text-left bg-gradient-to-tr from-[#fff] to-[#71717A] text-transparent bg-clip-text leading-none text-center"
+        class="sm:text-[28px] lg:text-[42px] text-[65px] font-bold text-left bg-gradient-to-tr from-[#fff] to-[#71717A] text-transparent bg-clip-text leading-tight text-center"
       >
-        PORÉM AJUDAR O MERCADO CUSTA
+        PORÉM AJUDAR TAMBÉM DEPENDE DE VOCÊ
+      </p>
+    </div>
+    <div class="w-full flex-col justify-center items-center mt-5 mb-5 text-center">
+      <p
+        data-v-d1bf48b0=""
+        class="sm:text-[16px] sm:px-4 mb-2 block text-[18px] font-regular leading-snug text-white antialiased"
+      >
+        E você pode nos ajudar seguindos os
+        <span data-v-d1bf48b0="" class="text-[#C3D600] font-bold">passos abaixo:</span>
       </p>
     </div>
   </div>
@@ -28,127 +37,7 @@
       class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex justify-center items-center gap-5 mx-auto"
     >
       <div
-        class="sm:h-[350px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
-        data-aos="fade-right"
-        data-aos-delay="150"
-        data-aos-duration="1000"
-        data-aos-easing="fade-left"
-      >
-        <div
-          aria-hidden="true"
-          class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 duration-300 bg-gradient-to-b from-white to-white blur-2xl opacity-5 group-hover:opacity-10"
-        ></div>
-        <div class="relative">
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="1"
-              y="1"
-              width="48"
-              height="48"
-              rx="9"
-              fill="#18181B"
-              fill-opacity="0.5"
-              stroke="#C3D600"
-              stroke-width="2"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M13 21.6684L29.3026 17.4171V33.004L22.6697 31.1816C22.7799 32.8184 21.5762 34.2493 19.9447 34.4211C18.2832 34.2412 17.0711 32.7648 17.2184 31.1V29.9671L13 28.7526V21.6684Z"
-              stroke="#C3D600"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M38 25.1802C38.4142 25.1802 38.75 24.8445 38.75 24.4302C38.75 24.016 38.4142 23.6802 38 23.6802V25.1802ZM35.5473 23.6802C35.1331 23.6802 34.7973 24.016 34.7973 24.4302C34.7973 24.8445 35.1331 25.1802 35.5473 25.1802V23.6802ZM34.5926 31.9717C34.8836 32.2665 35.3585 32.2695 35.6532 31.9785C35.948 31.6875 35.951 31.2126 35.66 30.9179L34.5926 31.9717ZM33.9285 29.1639C33.6375 28.8691 33.1626 28.8661 32.8678 29.1571C32.5731 29.4481 32.57 29.923 32.861 30.2177L33.9285 29.1639ZM35.6623 17.9445C35.9535 17.6499 35.9508 17.175 35.6563 16.8838C35.3617 16.5926 34.8869 16.5953 34.5956 16.8898L35.6623 17.9445ZM32.8614 18.6438C32.5702 18.9383 32.5729 19.4132 32.8674 19.7044C33.162 19.9956 33.6368 19.993 33.9281 19.6984L32.8614 18.6438ZM30.0527 33.0039C30.0527 32.5897 29.7169 32.2539 29.3027 32.2539C28.8884 32.2539 28.5527 32.5897 28.5527 33.0039H30.0527ZM28.5527 34.421C28.5527 34.8352 28.8884 35.171 29.3027 35.171C29.7169 35.171 30.0527 34.8352 30.0527 34.421H28.5527ZM28.5527 17.4171C28.5527 17.8313 28.8884 18.1671 29.3027 18.1671C29.7169 18.1671 30.0527 17.8313 30.0527 17.4171H28.5527ZM30.0527 16C30.0527 15.5858 29.7169 15.25 29.3027 15.25C28.8884 15.25 28.5527 15.5858 28.5527 16H30.0527ZM12.25 21.6684C12.25 22.0827 12.5858 22.4184 13 22.4184C13.4142 22.4184 13.75 22.0827 13.75 21.6684H12.25ZM13.75 20.2513C13.75 19.8371 13.4142 19.5013 13 19.5013C12.5858 19.5013 12.25 19.8371 12.25 20.2513H13.75ZM12.25 30.1698C12.25 30.584 12.5858 30.9198 13 30.9198C13.4142 30.9198 13.75 30.584 13.75 30.1698H12.25ZM13.75 28.7527C13.75 28.3384 13.4142 28.0027 13 28.0027C12.5858 28.0027 12.25 28.3384 12.25 28.7527H13.75ZM17.3815 29.235C16.9772 29.1449 16.5764 29.3997 16.4864 29.804C16.3963 30.2083 16.651 30.6091 17.0553 30.6991L17.3815 29.235ZM22.5066 31.9136C22.9109 32.0037 23.3117 31.7489 23.4018 31.3446C23.4919 30.9403 23.2371 30.5396 22.8328 30.4495L22.5066 31.9136ZM38 23.6802H35.5473V25.1802H38V23.6802ZM35.66 30.9179L33.9285 29.1639L32.861 30.2177L34.5926 31.9717L35.66 30.9179ZM34.5956 16.8898L32.8614 18.6438L33.9281 19.6984L35.6623 17.9445L34.5956 16.8898ZM28.5527 33.0039V34.421H30.0527V33.0039H28.5527ZM30.0527 17.4171V16H28.5527V17.4171H30.0527ZM13.75 21.6684V20.2513H12.25V21.6684H13.75ZM13.75 30.1698V28.7527H12.25V30.1698H13.75ZM17.0553 30.6991L22.5066 31.9136L22.8328 30.4495L17.3815 29.235L17.0553 30.6991Z"
-              fill="#C3D600"
-            />
-          </svg>
-
-          <div class="mt-6">
-            <h5
-              class="mb-2 block text-[24px] font-semibold leading-snug tracking-normal text-white antialiased"
-            >
-              Fale da nossa rede social de narguile para seus clientes
-            </h5>
-            <p class="block text-[16px] font-regular leading-relaxed text-white antialiased">
-              Promova um espaço onde os amantes de narguile podem se conectar, compartilhar
-              experiências e descobrir novidades exclusivas.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="sm:h-[350px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
-        data-aos="fade-right"
-        data-aos-delay="300"
-        data-aos-duration="1000"
-        data-aos-easing="fade-left"
-      >
-        <div
-          aria-hidden="true"
-          class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 duration-300 bg-gradient-to-b from-white to-white blur-2xl opacity-5 group-hover:opacity-10"
-        ></div>
-        <div class="relative">
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="1"
-              y="1"
-              width="48"
-              height="48"
-              rx="9"
-              fill="#18181B"
-              fill-opacity="0.5"
-              stroke="#C3D600"
-              stroke-width="2"
-            />
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M27.6934 33.2184C27.7225 33.8515 27.2343 34.3891 26.6013 34.421H24.4C23.767 34.3891 23.2788 33.8515 23.3079 33.2184V30.8829C20.2042 29.7439 18.4432 26.4634 19.209 23.2474C19.9748 20.0313 23.0253 17.8965 26.3092 18.2785C29.593 18.6606 32.0719 21.4387 32.0789 24.7447C32.0702 27.5149 30.3112 29.9768 27.6934 30.8829V33.2184Z"
-              stroke="#C3D600"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M27.6934 31.6329C28.1076 31.6329 28.4434 31.2971 28.4434 30.8829C28.4434 30.4686 28.1076 30.1329 27.6934 30.1329V31.6329ZM23.3066 30.1329C22.8924 30.1329 22.5566 30.4686 22.5566 30.8829C22.5566 31.2971 22.8924 31.6329 23.3066 31.6329V30.1329ZM38 25.4947C38.4142 25.4947 38.75 25.1589 38.75 24.7447C38.75 24.3305 38.4142 23.9947 38 23.9947V25.4947ZM35.3684 23.9947C34.9542 23.9947 34.6184 24.3305 34.6184 24.7447C34.6184 25.1589 34.9542 25.4947 35.3684 25.4947V23.9947ZM15.6316 25.4947C16.0458 25.4947 16.3816 25.1589 16.3816 24.7447C16.3816 24.3305 16.0458 23.9947 15.6316 23.9947V25.4947ZM13 23.9947C12.5858 23.9947 12.25 24.3305 12.25 24.7447C12.25 25.1589 12.5858 25.4947 13 25.4947V23.9947ZM34.8664 16.5337C35.1611 16.2427 35.1642 15.7678 34.8732 15.4731C34.5821 15.1783 34.1073 15.1753 33.8125 15.4663L34.8664 16.5337ZM31.9467 17.3084C31.652 17.5994 31.6489 18.0743 31.94 18.369C32.231 18.6638 32.7058 18.6668 33.0006 18.3758L31.9467 17.3084ZM19.054 32.1817C19.3484 31.8902 19.3507 31.4154 19.0593 31.121C18.7679 30.8267 18.293 30.8243 17.9986 31.1157L19.054 32.1817ZM16.1381 32.9578C15.8438 33.2493 15.8414 33.7241 16.1328 34.0185C16.4243 34.3128 16.8991 34.3152 17.1935 34.0238L16.1381 32.9578ZM33.8157 34.0238C34.1101 34.3152 34.585 34.3128 34.8764 34.0185C35.1678 33.7241 35.1655 33.2493 34.8711 32.9578L33.8157 34.0238ZM33.0106 31.1157C32.7162 30.8243 32.2414 30.8267 31.9499 31.121C31.6585 31.4154 31.6609 31.8902 31.9552 32.1817L33.0106 31.1157ZM17.9994 18.3758C18.2941 18.6668 18.769 18.6638 19.06 18.369C19.351 18.0743 19.348 17.5994 19.0532 17.3084L17.9994 18.3758ZM17.1874 15.4663C16.8927 15.1753 16.4178 15.1783 16.1268 15.4731C15.8358 15.7678 15.8388 16.2427 16.1336 16.5337L17.1874 15.4663ZM27.6934 30.1329H23.3066V31.6329H27.6934V30.1329ZM38 23.9947H35.3684V25.4947H38V23.9947ZM15.6316 23.9947H13V25.4947H15.6316V23.9947ZM33.8125 15.4663L31.9467 17.3084L33.0006 18.3758L34.8664 16.5337L33.8125 15.4663ZM17.9986 31.1157L16.1381 32.9578L17.1935 34.0238L19.054 32.1817L17.9986 31.1157ZM34.8711 32.9578L33.0106 31.1157L31.9552 32.1817L33.8157 34.0238L34.8711 32.9578ZM19.0532 17.3084L17.1874 15.4663L16.1336 16.5337L17.9994 18.3758L19.0532 17.3084Z"
-              fill="#C3D600"
-            />
-          </svg>
-
-          <div class="mt-6">
-            <h5
-              class="mb-2 block text-[24px] font-semibold leading-snug tracking-normal text-white antialiased"
-            >
-              Nos deem ideias
-            </h5>
-            <p class="block text-[16px] font-regular leading-relaxed text-white antialiased">
-              Envie sugestões e ideias para melhorarmos ainda mais. Juntos, podemos criar soluções
-              incríveis.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex justify-center items-center gap-5 mx-auto mt-5"
-    >
-      <div
-        class="sm:h-[350px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
+        class="sm:h-[390px] lg:h-[375px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
         data-aos="fade-right"
         data-aos-delay="450"
         data-aos-duration="1000"
@@ -222,11 +111,181 @@
               Junte-se ao grupo de lojistas da ESC e obtenha informações exclusivas e fique por
               dentro do lançamento do nosso APP.
             </p>
+            <a
+              href="https://chat.whatsapp.com/BjWMlmgYIBJIdpl8UPStrT"
+              target="_new"
+              class="sm:w-full sm:text-[12px] sm:justify-center w-[300px] flex items-center mt-6 bg-[#25D366] border border-[#25D366] rounded-lg px-6 py-2 text-sm font-medium text-black hover:border-[#128C7E] hover:bg-[#128C7E] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-all"
+            >
+              <svg
+                class="h-6 w-6 mr-2 stroke-black"
+                width="17"
+                height="16"
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9 15.0001C12.1157 14.9994 14.8559 12.9396 15.7224 9.94677C16.5889 6.95397 15.373 3.74874 12.7396 2.0836C10.1062 0.418453 6.68919 0.694279 4.35695 2.76026C2.02471 4.82624 1.3387 8.185 2.674 11.0001L1 15.0001L5.392 14.0001C6.4809 14.6564 7.72862 15.0022 9 15.0001Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M7.041 7.06608C6.47169 7.06112 6.01372 6.59646 6.01702 6.02714C6.02032 5.45781 6.48364 4.99849 7.05297 5.00013C7.6223 5.00177 8.08298 5.46375 8.083 6.03308C8.08024 6.60597 7.61388 7.0683 7.041 7.06608V7.06608Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.917 9.91802C9.91376 10.3397 10.1652 10.7217 10.5538 10.8854C10.9424 11.0491 11.3914 10.9622 11.6909 10.6653C11.9903 10.3684 12.0811 9.92022 11.9208 9.53021C11.7605 9.1402 11.3807 8.88544 10.959 8.88502C10.3861 8.8828 9.91976 9.34514 9.917 9.91802V9.91802Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M6 6.03308C5.986 9.50008 9.3 11.3301 10.959 10.9511"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+
+              <span>Entre no grupo do WhatsApp</span>
+            </a>
           </div>
         </div>
       </div>
       <div
-        class="sm:h-[350px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
+        class="sm:h-[300px] lg:h-[375px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
+        data-aos="fade-right"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        data-aos-easing="fade-left"
+      >
+        <div
+          aria-hidden="true"
+          class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 duration-300 bg-gradient-to-b from-white to-white blur-2xl opacity-5 group-hover:opacity-10"
+        ></div>
+        <div class="relative">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="48"
+              height="48"
+              rx="9"
+              fill="#18181B"
+              fill-opacity="0.5"
+              stroke="#C3D600"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M27.6934 33.2184C27.7225 33.8515 27.2343 34.3891 26.6013 34.421H24.4C23.767 34.3891 23.2788 33.8515 23.3079 33.2184V30.8829C20.2042 29.7439 18.4432 26.4634 19.209 23.2474C19.9748 20.0313 23.0253 17.8965 26.3092 18.2785C29.593 18.6606 32.0719 21.4387 32.0789 24.7447C32.0702 27.5149 30.3112 29.9768 27.6934 30.8829V33.2184Z"
+              stroke="#C3D600"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M27.6934 31.6329C28.1076 31.6329 28.4434 31.2971 28.4434 30.8829C28.4434 30.4686 28.1076 30.1329 27.6934 30.1329V31.6329ZM23.3066 30.1329C22.8924 30.1329 22.5566 30.4686 22.5566 30.8829C22.5566 31.2971 22.8924 31.6329 23.3066 31.6329V30.1329ZM38 25.4947C38.4142 25.4947 38.75 25.1589 38.75 24.7447C38.75 24.3305 38.4142 23.9947 38 23.9947V25.4947ZM35.3684 23.9947C34.9542 23.9947 34.6184 24.3305 34.6184 24.7447C34.6184 25.1589 34.9542 25.4947 35.3684 25.4947V23.9947ZM15.6316 25.4947C16.0458 25.4947 16.3816 25.1589 16.3816 24.7447C16.3816 24.3305 16.0458 23.9947 15.6316 23.9947V25.4947ZM13 23.9947C12.5858 23.9947 12.25 24.3305 12.25 24.7447C12.25 25.1589 12.5858 25.4947 13 25.4947V23.9947ZM34.8664 16.5337C35.1611 16.2427 35.1642 15.7678 34.8732 15.4731C34.5821 15.1783 34.1073 15.1753 33.8125 15.4663L34.8664 16.5337ZM31.9467 17.3084C31.652 17.5994 31.6489 18.0743 31.94 18.369C32.231 18.6638 32.7058 18.6668 33.0006 18.3758L31.9467 17.3084ZM19.054 32.1817C19.3484 31.8902 19.3507 31.4154 19.0593 31.121C18.7679 30.8267 18.293 30.8243 17.9986 31.1157L19.054 32.1817ZM16.1381 32.9578C15.8438 33.2493 15.8414 33.7241 16.1328 34.0185C16.4243 34.3128 16.8991 34.3152 17.1935 34.0238L16.1381 32.9578ZM33.8157 34.0238C34.1101 34.3152 34.585 34.3128 34.8764 34.0185C35.1678 33.7241 35.1655 33.2493 34.8711 32.9578L33.8157 34.0238ZM33.0106 31.1157C32.7162 30.8243 32.2414 30.8267 31.9499 31.121C31.6585 31.4154 31.6609 31.8902 31.9552 32.1817L33.0106 31.1157ZM17.9994 18.3758C18.2941 18.6668 18.769 18.6638 19.06 18.369C19.351 18.0743 19.348 17.5994 19.0532 17.3084L17.9994 18.3758ZM17.1874 15.4663C16.8927 15.1753 16.4178 15.1783 16.1268 15.4731C15.8358 15.7678 15.8388 16.2427 16.1336 16.5337L17.1874 15.4663ZM27.6934 30.1329H23.3066V31.6329H27.6934V30.1329ZM38 23.9947H35.3684V25.4947H38V23.9947ZM15.6316 23.9947H13V25.4947H15.6316V23.9947ZM33.8125 15.4663L31.9467 17.3084L33.0006 18.3758L34.8664 16.5337L33.8125 15.4663ZM17.9986 31.1157L16.1381 32.9578L17.1935 34.0238L19.054 32.1817L17.9986 31.1157ZM34.8711 32.9578L33.0106 31.1157L31.9552 32.1817L33.8157 34.0238L34.8711 32.9578ZM19.0532 17.3084L17.1874 15.4663L16.1336 16.5337L17.9994 18.3758L19.0532 17.3084Z"
+              fill="#C3D600"
+            />
+          </svg>
+
+          <div class="mt-6">
+            <h5
+              class="mb-2 block text-[24px] font-semibold leading-snug tracking-normal text-white antialiased"
+            >
+              Nos deem ideias
+            </h5>
+            <p class="block text-[16px] font-regular leading-relaxed text-white antialiased">
+              Envie sugestões e ideias para melhorarmos ainda mais. Juntos, podemos criar soluções
+              incríveis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sm:w-full sm:flex-col md:w-full lg:w-full xl:w-full 2xl:w-full w-4/6 flex justify-center items-center gap-5 mx-auto mt-5"
+    >
+      <div
+        class="sm:h-[400px] lg:h-[375px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
+        data-aos="fade-right"
+        data-aos-delay="150"
+        data-aos-duration="1000"
+        data-aos-easing="fade-left"
+      >
+        <div
+          aria-hidden="true"
+          class="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 duration-300 bg-gradient-to-b from-white to-white blur-2xl opacity-5 group-hover:opacity-10"
+        ></div>
+        <div class="relative">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="48"
+              height="48"
+              rx="9"
+              fill="#18181B"
+              fill-opacity="0.5"
+              stroke="#C3D600"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M13 21.6684L29.3026 17.4171V33.004L22.6697 31.1816C22.7799 32.8184 21.5762 34.2493 19.9447 34.4211C18.2832 34.2412 17.0711 32.7648 17.2184 31.1V29.9671L13 28.7526V21.6684Z"
+              stroke="#C3D600"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M38 25.1802C38.4142 25.1802 38.75 24.8445 38.75 24.4302C38.75 24.016 38.4142 23.6802 38 23.6802V25.1802ZM35.5473 23.6802C35.1331 23.6802 34.7973 24.016 34.7973 24.4302C34.7973 24.8445 35.1331 25.1802 35.5473 25.1802V23.6802ZM34.5926 31.9717C34.8836 32.2665 35.3585 32.2695 35.6532 31.9785C35.948 31.6875 35.951 31.2126 35.66 30.9179L34.5926 31.9717ZM33.9285 29.1639C33.6375 28.8691 33.1626 28.8661 32.8678 29.1571C32.5731 29.4481 32.57 29.923 32.861 30.2177L33.9285 29.1639ZM35.6623 17.9445C35.9535 17.6499 35.9508 17.175 35.6563 16.8838C35.3617 16.5926 34.8869 16.5953 34.5956 16.8898L35.6623 17.9445ZM32.8614 18.6438C32.5702 18.9383 32.5729 19.4132 32.8674 19.7044C33.162 19.9956 33.6368 19.993 33.9281 19.6984L32.8614 18.6438ZM30.0527 33.0039C30.0527 32.5897 29.7169 32.2539 29.3027 32.2539C28.8884 32.2539 28.5527 32.5897 28.5527 33.0039H30.0527ZM28.5527 34.421C28.5527 34.8352 28.8884 35.171 29.3027 35.171C29.7169 35.171 30.0527 34.8352 30.0527 34.421H28.5527ZM28.5527 17.4171C28.5527 17.8313 28.8884 18.1671 29.3027 18.1671C29.7169 18.1671 30.0527 17.8313 30.0527 17.4171H28.5527ZM30.0527 16C30.0527 15.5858 29.7169 15.25 29.3027 15.25C28.8884 15.25 28.5527 15.5858 28.5527 16H30.0527ZM12.25 21.6684C12.25 22.0827 12.5858 22.4184 13 22.4184C13.4142 22.4184 13.75 22.0827 13.75 21.6684H12.25ZM13.75 20.2513C13.75 19.8371 13.4142 19.5013 13 19.5013C12.5858 19.5013 12.25 19.8371 12.25 20.2513H13.75ZM12.25 30.1698C12.25 30.584 12.5858 30.9198 13 30.9198C13.4142 30.9198 13.75 30.584 13.75 30.1698H12.25ZM13.75 28.7527C13.75 28.3384 13.4142 28.0027 13 28.0027C12.5858 28.0027 12.25 28.3384 12.25 28.7527H13.75ZM17.3815 29.235C16.9772 29.1449 16.5764 29.3997 16.4864 29.804C16.3963 30.2083 16.651 30.6091 17.0553 30.6991L17.3815 29.235ZM22.5066 31.9136C22.9109 32.0037 23.3117 31.7489 23.4018 31.3446C23.4919 30.9403 23.2371 30.5396 22.8328 30.4495L22.5066 31.9136ZM38 23.6802H35.5473V25.1802H38V23.6802ZM35.66 30.9179L33.9285 29.1639L32.861 30.2177L34.5926 31.9717L35.66 30.9179ZM34.5956 16.8898L32.8614 18.6438L33.9281 19.6984L35.6623 17.9445L34.5956 16.8898ZM28.5527 33.0039V34.421H30.0527V33.0039H28.5527ZM30.0527 17.4171V16H28.5527V17.4171H30.0527ZM13.75 21.6684V20.2513H12.25V21.6684H13.75ZM13.75 30.1698V28.7527H12.25V30.1698H13.75ZM17.0553 30.6991L22.5066 31.9136L22.8328 30.4495L17.3815 29.235L17.0553 30.6991Z"
+              fill="#C3D600"
+            />
+          </svg>
+
+          <div class="mt-6">
+            <h5
+              class="mb-2 block text-[24px] font-semibold leading-snug tracking-normal text-white antialiased"
+            >
+              Fale da nossa rede social de narguile para seus clientes
+            </h5>
+            <p class="block text-[16px] font-regular leading-relaxed text-white antialiased">
+              Promova um espaço onde os amantes de narguile podem se conectar, compartilhar
+              experiências e descobrir novidades exclusivas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sm:h-[420px] lg:h-[375px] w-full h-[300px] relative group overflow-hidden p-8 rounded-xl border border-gray-800 bg-gray-900"
         data-aos="fade-right"
         data-aos-delay="600"
         data-aos-duration="1000"
